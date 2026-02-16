@@ -440,8 +440,11 @@
                         Voor vragen en suggesties:<br />
                         <strong>
                             <a
-                                href="mailto:burgerinitiatief.leyduin@gmail.com"
-                                >burgerinitiatief.leyduin@gmail.com</a
+                                href="#"
+                                class="email-link"
+                                data-user="burgerinitiatief.leyduin"
+                                data-domain="gmail.com"
+                                >Klik hier voor e-mailadres</a
                             >
                         </strong>
                     </p>
@@ -457,8 +460,11 @@
                             <h4>Contactgegevens</h4>
                             <p>
                                 <a
-                                    href="mailto:burgerinitiatief.leyduin@gmail.com"
-                                    >burgerinitiatief.leyduin@gmail.com</a
+                                    href="#"
+                                    class="email-link"
+                                    data-user="burgerinitiatief.leyduin"
+                                    data-domain="gmail.com"
+                                    >Klik hier voor e-mailadres</a
                                 >
                             </p>
                         </div>
@@ -493,8 +499,12 @@
                 </p>
                 <p>
                     Contact:
-                    <a href="mailto:burgerinitiatief.leyduin@gmail.com"
-                        >burgerinitiatief.leyduin@gmail.com</a
+                    <a
+                        href="#"
+                        class="email-link"
+                        data-user="burgerinitiatief.leyduin"
+                        data-domain="gmail.com"
+                        >Klik hier voor e-mailadres</a
                     >
                 </p>
             </div>
@@ -552,6 +562,20 @@
                                 );
                             }
                         });
+                    });
+
+                // Email obfuscatie (bescherming tegen scrapers)
+                document
+                    .querySelectorAll(".email-link")
+                    .forEach(function (link) {
+                        var user = link.getAttribute("data-user");
+                        var domain = link.getAttribute("data-domain");
+                        if (user && domain) {
+                            var email = user + "@" + domain;
+                            link.href = "mailto:" + email;
+                            link.textContent = email;
+                            link.setAttribute("aria-label", "E-mail naar " + email);
+                        }
                     });
             })();
         </script>
