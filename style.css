@@ -798,15 +798,20 @@ li {
 @media (max-width: 480px) {
     .hero {
         min-height: 55vh;
+        align-items: center;
+        justify-content: center;
       }
 
         .hero-content {
           padding: var(--space-lg) var(--space-sm);
+          margin: 0 var(--space-md);
+          text-align: center;
         }
 
         .hero-actions {
           flex-direction: column;
           align-items: center;
+          justify-content: center;
         }
 
         .btn {
