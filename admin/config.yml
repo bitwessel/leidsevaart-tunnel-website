@@ -2,8 +2,7 @@ backend:
   name: github
   repo: bitwessel/leidsevaart-tunnel-website
   branch: main
-  auth_type: pkce
-  app_id: Ov23lib5bhsTR3JAkqHH
+  base_url: https://api.netlify.com
 
 # No image uploading for now; mods edit text only
 media_folder: assets
