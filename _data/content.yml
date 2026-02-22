@@ -1,97 +1,88 @@
 hero:
-  title: "Burgerinitiatief Leyduin"
-  subtitle: "Herstel de directe veilige verbinding voor wandelaars tussen Heemstede en Buitenplaats Leyduin"
-  intro_1: "Het Burgerinitiatief Leyduin is een initiatief van inwoners van Heemstede dat pleit voor de realisatie van een voetgangerstunnel (met fietsgoot) onder het spoor bij Buitenplaats Leyduin."
-  intro_2: "Aanleiding is de definitieve sluiting van de onbewaakte spoorwegovergang op 29\u00a0maart\u00a02024 door ProRail. Sindsdien ontbreekt een veilige en directe toegang voor wandelaars tot het natuurgebied."
-  intro_3: "Het initiatief werd ondertekend door ruim 1600 inwoners en op 17\u00a0april\u00a02025 officieel ingediend bij de burgemeester. Een tunneltje herstelt een veilige en directe verbinding met het natuurgebied na de afsluiting van de onbewaakte spoorwegovergang in maart 2024 door ProRail."
-  btn_primary: "Waarom een tunneltje?"
-  btn_secondary: "Contact"
-
+  title: Burgerinitiatief Leyduin
+  subtitle: Herstel de directe veilige verbinding voor wandelaars tussen Heemstede en Buitenplaats Leyduin
+  intro_1: Het Burgerinitiatief Leyduin is een initiatief van inwoners van Heemstede dat pleit voor de realisatie van een voetgangerstunnel (met fietsgoot) onder het spoor bij Buitenplaats Leyduin.
+  intro_2: Aanleiding is de definitieve sluiting van de onbewaakte spoorwegovergang op 29 maart 2024 door ProRail. Sindsdien ontbreekt een veilige en directe toegang voor wandelaars tot het natuurgebied.
+  intro_3: Het initiatief werd ondertekend door ruim 1600 inwoners en op 17 april 2025 officieel ingediend bij de burgemeester. Een tunneltje herstelt een veilige en directe verbinding met het natuurgebied na de afsluiting van de onbewaakte spoorwegovergang in maart 2024 door ProRail.
+  btn_primary: Waarom een tunneltje?
+  btn_secondary: Contact
 toegang:
-  title: "Toegang tot Buitenplaats Leyduin"
-  img_caption: "De onbewaakte overgang bij Leyduin dreigde te sluiten na meer dan 180 jaar — zonder alternatief."
-  para_1: "De onbewaakte spoorwegovergang bij het Laantje van Leyduin was jarenlang een geliefde wandel- en fietsverbinding tussen de Leidsevaartweg in Heemstede en Buitenplaats Leyduin. Voor veel inwoners was dit de toegang tot een gezond ommetje in de natuur."
-  para_2: "In het kader van een landelijk veiligheidsprogramma sluit ProRail onbewaakte spoorwegovergangen (NABO's). De overgang bij Leyduin is daarom definitief afgesloten op 29\u00a0maart\u00a02024. Daarmee is een belangrijke verbinding voor wandelaars verdwenen."
-
+  title: Toegang tot Buitenplaats Leyduin
+  img_caption: De onbewaakte overgang bij Leyduin dreigde te sluiten na meer dan 180 jaar — zonder alternatief.
+  para_1: De onbewaakte spoorwegovergang bij het Laantje van Leyduin was jarenlang een geliefde wandel- en fietsverbinding tussen de Leidsevaartweg in Heemstede en Buitenplaats Leyduin. Voor veel inwoners was dit de toegang tot een gezond ommetje in de natuur.
+  para_2: In het kader van een landelijk veiligheidsprogramma sluit ProRail onbewaakte spoorwegovergangen (NABO's). De overgang bij Leyduin is daarom definitief afgesloten op 29 maart 2024. Daarmee is een belangrijke verbinding voor wandelaars verdwenen.
 gevolgen:
-  title: "Gevolgen van de sluiting"
-  img_caption: "Bewoners verzetten zich tegen de komende afsluiting, een zonder alternatief. Foto United Photos/Toussaint Kluiters"
-  intro: "Sinds de afsluiting zijn bezoekers van Buitenplaats Leyduin aangewezen op de bewaakte spoorwegovergang bij de Manpadslaan. Dit leidt tot meerdere problemen:"
+  title: Gevolgen van de sluiting
+  img_caption: Bewoners verzetten zich tegen de komende afsluiting, een zonder alternatief. Foto United Photos/Toussaint Kluiters
+  intro: 'Sinds de afsluiting zijn bezoekers van Buitenplaats Leyduin aangewezen op de bewaakte spoorwegovergang bij de Manpadslaan. Dit leidt tot meerdere problemen:'
   items:
-    - "De omweg is aanzienlijk: vanaf de Letterbrug bij de Amstellaan is de route heen en terug circa 2,5\u00a0kilometer langer."
-    - "Wandelaars moeten gebruikmaken van een druk en smal fietspad langs de Leidsevaartweg, ongeschikt voor gecombineerd gebruik door fietsers, wandelaars, kinderwagens, honden en rolstoelen."
-    - "De Manpadslaan is een smalle weg zonder veilige loopruimte."
-    - "In de toekomst zullen er vaker treinen rijden tussen Haarlem en Leiden, waardoor de slagbomen bij de Manpadslaan nog vaker sluiten en de doorstroming verslechtert."
-    - "Vanaf de Leidsevaartweg is er vanaf Station Heemstede Aerdenhout tot Bennebroek over 4,5\u00a0kilometer slechts 1 toegang tot Buitenplaats Leyduin."
-  emphasis: "Kortom: de huidige situatie is onveilig, onpraktisch en ontmoedigt recreatief gebruik van het gebied."
-
+    - 'De omweg is aanzienlijk: vanaf de Letterbrug bij de Amstellaan is de route heen en terug circa 2,5 kilometer langer.'
+    - Wandelaars moeten gebruikmaken van een druk en smal fietspad langs de Leidsevaartweg, ongeschikt voor gecombineerd gebruik door fietsers, wandelaars, kinderwagens, honden en rolstoelen.
+    - De Manpadslaan is een smalle weg zonder veilige loopruimte.
+    - In de toekomst zullen er vaker treinen rijden tussen Haarlem en Leiden, waardoor de slagbomen bij de Manpadslaan nog vaker sluiten en de doorstroming verslechtert.
+    - Vanaf de Leidsevaartweg is er vanaf Station Heemstede Aerdenhout tot Bennebroek over 4,5 kilometer slechts 1 toegang tot Buitenplaats Leyduin.
+  emphasis: 'Kortom: de huidige situatie is onveilig, onpraktisch en ontmoedigt recreatief gebruik van het gebied.'
 eerdere_plannen:
-  title: "Eerdere plannen voor een oplossing"
-  img_caption_1: "Aanbieding van het burgerinitiatief met 1.678 handtekeningen aan de burgemeester."
-  img_caption_2: "Massale steun voor aanleg voetgangerstunnel Leyduin — Haarlems Dagblad."
-  para_1: "Al vóór de sluiting is gezocht naar een veilig alternatief. In maart 2022 werd een intentieovereenkomst tussen de gemeente Heemstede en ProRail getekend om een voetgangerstunnel met fietsgoot te bouwen, gesitueerd op het weiland links van het voormalige pompstation langs de Leidsevaartweg."
-  para_2: "De bouw is echter nooit gestart. Sommige politieke partijen wilden alleen instemmen met een volwaardige fietstunnel met hellingen. Dit plan bleek financieel onaantrekkelijk en verdween vervolgens van de agenda."
-  para_3: "Toen duidelijk werd dat de overgang definitief zou sluiten en de tunneloptie was geschrapt, is een actiegroep opgericht om opnieuw aandacht te vragen voor een veilige doorgang naar Leyduin. Volgens ons is een tunneltje de beste oplossing hiervoor."
-  para_4: "Het was inmiddels ook duidelijk dat de gemeente daar zelf verder geen alternatieve plannen of voorzieningen voor had. Een Burgerinitiatief biedt de mogelijkheid om de tunneloptie opnieuw op de agenda van de gemeenteraad te krijgen."
-  para_5: "Binnen korte tijd werden 1.700 handtekeningen en vele steunbetuigingen van Heemsteedse inwoners opgehaald die nodig waren voor het indienen van het eerste Burgerinitiatief in deze gemeente. Het initiatief is in april 2025 aangeboden en staat nu op de agenda van de gemeenteraad om de haalbaarheid en financiering te onderzoeken."
-
+  title: Eerdere plannen voor een oplossing
+  img_caption_1: Aanbieding van het burgerinitiatief met 1.678 handtekeningen aan de burgemeester.
+  img_caption_2: Massale steun voor aanleg voetgangerstunnel Leyduin — Haarlems Dagblad.
+  para_1: Al vóór de sluiting is gezocht naar een veilig alternatief. In maart 2022 werd een intentieovereenkomst tussen de gemeente Heemstede en ProRail getekend om een voetgangerstunnel met fietsgoot te bouwen, gesitueerd op het weiland links van het voormalige pompstation langs de Leidsevaartweg.
+  para_2: De bouw is echter nooit gestart. Sommige politieke partijen wilden alleen instemmen met een volwaardige fietstunnel met hellingen. Dit plan bleek financieel onaantrekkelijk en verdween vervolgens van de agenda.
+  para_3: Toen duidelijk werd dat de overgang definitief zou sluiten en de tunneloptie was geschrapt, is een actiegroep opgericht om opnieuw aandacht te vragen voor een veilige doorgang naar Leyduin. Volgens ons is een tunneltje de beste oplossing hiervoor.
+  para_4: Het was inmiddels ook duidelijk dat de gemeente daar zelf verder geen alternatieve plannen of voorzieningen voor had. Een Burgerinitiatief biedt de mogelijkheid om de tunneloptie opnieuw op de agenda van de gemeenteraad te krijgen.
+  para_5: Binnen korte tijd werden 1.700 handtekeningen en vele steunbetuigingen van Heemsteedse inwoners opgehaald die nodig waren voor het indienen van het eerste Burgerinitiatief in deze gemeente. Het initiatief is in april 2025 aangeboden en staat nu op de agenda van de gemeenteraad om de haalbaarheid en financiering te onderzoeken.
 doel:
-  title: "Doel van het Burgerinitiatief"
-  para_1: "Met het Burgerinitiatief Leyduin verzoeken de indieners de gemeenteraad van Heemstede om die besluiten te nemen die de realisatie van een eenvoudige voetgangerstunnel (met fietsgoot) onder het spoor bij Leyduin mogelijk maken. Dit ter vervanging van de inmiddels afgesloten Niet Actief Beveiligde Overweg (NABO)."
-  para_2: "Het doel is een veilige, toegankelijke onderdoorgang te realiseren die de verbinding met Leyduin herstelt voor het gezonde en veilige \"ommetje\"."
-  cards_title: "Waarom een tunneltje?"
+  title: Doel van het Burgerinitiatief
+  para_1: Met het Burgerinitiatief Leyduin verzoeken de indieners de gemeenteraad van Heemstede om die besluiten te nemen die de realisatie van een eenvoudige voetgangerstunnel (met fietsgoot) onder het spoor bij Leyduin mogelijk maken. Dit ter vervanging van de inmiddels afgesloten Niet Actief Beveiligde Overweg (NABO).
+  para_2: Het doel is een veilige, toegankelijke onderdoorgang te realiseren die de verbinding met Leyduin herstelt voor het gezonde en veilige "ommetje".
+  cards_title: Waarom een tunneltje?
   cards:
-    - icon: "🛡️"
-      title: "Veiligheid"
-      text: "Een tunneltje scheidt langzaam verkeer volledig van het spoor. Geen gelijkvloerse kruising meer, dus maximale veiligheid voor voetgangers en fietsers."
-    - icon: "🚶"
-      title: "Bereikbaarheid"
-      text: "De huidige omleiding via de Manspadlaan kost wandelaars aanzienlijk meer tijd. Een tunnel herstelt de korte, directe route naar het natuurgebied."
-    - icon: "🌳"
-      title: "Recreatie & natuur"
-      text: "Buitenplaats Leyduin en het achterliggende duingebied zijn van grote recreatieve waarde. Een goede verbinding spreidt de recreatiedruk en maakt de natuur toegankelijk voor meer mensen."
-    - icon: "❤️"
-      title: "Gezondheid"
-      text: "Wandelen en fietsen in de natuur dragen bij aan lichamelijke en mentale gezondheid. Een directe, aantrekkelijke route verlaagt de drempel om naar buiten te gaan."
-
+    - icon: 🛡️
+      title: Veiligheid
+      text: Een tunneltje scheidt langzaam verkeer volledig van het spoor. Geen gelijkvloerse kruising meer, dus maximale veiligheid voor voetgangers en fietsers.
+    - icon: 🚶
+      title: Bereikbaarheid
+      text: De huidige omleiding via de Manspadlaan kost wandelaars aanzienlijk meer tijd. Een tunnel herstelt de korte, directe route naar het natuurgebied.
+    - icon: 🌳
+      title: Recreatie & natuur
+      text: Buitenplaats Leyduin en het achterliggende duingebied zijn van grote recreatieve waarde. Een goede verbinding spreidt de recreatiedruk en maakt de natuur toegankelijk voor meer mensen.
+    - icon: ❤️
+      title: Gezondheid
+      text: Wandelen en fietsen in de natuur dragen bij aan lichamelijke en mentale gezondheid. Een directe, aantrekkelijke route verlaagt de drempel om naar buiten te gaan.
 ondersteuning:
-  title: "Ondersteuning"
-  intro: "Het plan in het Burgerinitiatief wordt ondersteund door onder andere:"
+  title: Ondersteuning
+  intro: 'Het plan in het Burgerinitiatief wordt ondersteund door onder andere:'
   items:
-    - "Wandelnet"
-    - "Te Voet"
-    - "Landschap Noord-Holland"
-
+    - Wandelnet
+    - Te Voet
+    - Landschap Noord-Holland
 verkiezingen:
-  title: "Gemeenteraadsverkiezingen — 18\u00a0maart\u00a02026"
-  para_1: "Het burgerinitiatief voor een fietstunnel bij Leyduin in Heemstede wordt gesteund door partijen die inzetten op verkeersveiligheid en duurzame recreatie."
-  para_2: "In de raad is er aandacht voor de inhoudelijke argumenten:"
+  title: Gemeenteraadsverkiezingen — 18 maart 2026
+  para_1: Het burgerinitiatief voor een fietstunnel bij Leyduin in Heemstede wordt gesteund door partijen die inzetten op verkeersveiligheid en duurzame recreatie.
+  para_2: 'In de raad is er aandacht voor de inhoudelijke argumenten:'
   items:
-    - "veiligheid"
-    - "natuurbeleving"
-    - "verminderde verkeersdrukte"
-    - "duurzaam recreatief gebruik"
-  para_3: "Er wordt ingezet op gesprekken met ProRail en Landschap Noord-Holland over de financiering. De raad heeft gevraagd om een nader onderzoek door het college."
-  para_4: "Met het oog op de gemeenteraadsverkiezingen op 18\u00a0maart\u00a02026 is het interessant de standpunten van de verschillende partijen na te gaan."
-  parties_title: "Politieke standpunten"
+    - veiligheid
+    - natuurbeleving
+    - verminderde verkeersdrukte
+    - duurzaam recreatief gebruik
+  para_3: Er wordt ingezet op gesprekken met ProRail en Landschap Noord-Holland over de financiering. De raad heeft gevraagd om een nader onderzoek door het college.
+  para_4: Met het oog op de gemeenteraadsverkiezingen op 18 maart 2026 is het interessant de standpunten van de verschillende partijen na te gaan.
+  parties_title: Politieke standpunten
   parties:
-    - name: "GroenLinks"
-      text: "Uitgesproken voorstander. Het afsluiten van de verbinding dwingt mensen vaker de auto te pakken. Het initiatief verbetert veiligheid en vermindert verkeersdruk."
-    - name: "CDA"
-      text: "Benadrukt het belang van een goede en veilige recreatieve verbinding. Heeft met een motie in de raad het onderzoek naar de voetgangerstunnel versneld."
-
+    - name: GroenLinks
+      text: Uitgesproken voorstander. Het afsluiten van de verbinding dwingt mensen vaker de auto te pakken. Het initiatief verbetert veiligheid en vermindert verkeersdruk.
+    - name: CDA
+      text: Benadrukt het belang van een goede en veilige recreatieve verbinding. Heeft met een motie in de raad het onderzoek naar de voetgangerstunnel versneld.
 planning:
-  title: "Planning en voortgang"
-  para_1: "De gewenste einddatum voor afronding van de onderzoeken en verdere uitwerking door de gemeenteraad was oorspronkelijk december 2025."
-  para_2: "In de begrotingswijzigingen voor 2026 wordt de financiële doorwerking van diverse projecten verder verwerkt."
-
+  title: Planning en voortgang
+  para_1: De gewenste einddatum voor afronding van de onderzoeken en verdere uitwerking door de gemeenteraad was oorspronkelijk december 2025.
+  para_2: In de begrotingswijzigingen voor 2026 wordt de financiële doorwerking van diverse projecten verder verwerkt.
 op_de_hoogte:
-  title: "Blijf op de hoogte"
-  para_1: "Via deze website willen we alle mensen die het Burgerinitiatief gesteund hebben bedanken en informeren. Hier delen we informatie en houden we u op de hoogte van de stand van zaken."
-  para_2: "Voor vragen en suggesties:"
-
+  title: Blijf op de hoogte
+  para_1: Via deze website willen we alle mensen die het Burgerinitiatief gesteund hebben bedanken en informeren. Hier delen we informatie en houden we u op de hoogte van de stand van zaken.
+  para_2: 'Voor vragen en suggesties:'
 contact:
-  title: "Contact & delen"
-  share_title: "Deel dit initiatief"
-  share_text: "Vertel buren, vrienden en familie over het burgerinitiatief."
-  sources_title: "Bronnen en links"
+  title: Contact & delen
+  share_title: Deel dit initiatief!
+  share_text: Vertel buren, vrienden en familie over het burgerinitiatief.
+  sources_title: Bronnen en links
