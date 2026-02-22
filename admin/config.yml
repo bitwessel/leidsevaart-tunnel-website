@@ -1,0 +1,151 @@
+backend:
+  name: github
+  repo: bitwessel/leidsevaart-tunnel-website
+  branch: main
+  auth_type: pkce
+  app_id: Ov23lib5bhsTR3JAkqHH
+
+# No image uploading for now; mods edit text only
+media_folder: assets
+public_folder: /assets
+
+locale: nl
+
+collections:
+  - name: pagina
+    label: Pagina inhoud
+    files:
+      - name: content
+        label: Alle teksten
+        file: _data/content.yml
+        fields:
+
+          # ── HERO ──────────────────────────────────────────────
+          - label: Hero sectie
+            name: hero
+            widget: object
+            fields:
+              - { label: Titel, name: title, widget: string }
+              - { label: Ondertitel, name: subtitle, widget: string }
+              - { label: Introductie alinea 1, name: intro_1, widget: text }
+              - { label: Introductie alinea 2, name: intro_2, widget: text }
+              - { label: Introductie alinea 3, name: intro_3, widget: text }
+              - { label: Knop 1 tekst, name: btn_primary, widget: string }
+              - { label: Knop 2 tekst, name: btn_secondary, widget: string }
+
+          # ── TOEGANG ───────────────────────────────────────────
+          - label: Sectie — Toegang tot Leyduin
+            name: toegang
+            widget: object
+            fields:
+              - { label: Koptitel, name: title, widget: string }
+              - { label: Bijschrift foto, name: img_caption, widget: string }
+              - { label: Alinea 1, name: para_1, widget: text }
+              - { label: Alinea 2, name: para_2, widget: text }
+
+          # ── GEVOLGEN ──────────────────────────────────────────
+          - label: Sectie — Gevolgen van de sluiting
+            name: gevolgen
+            widget: object
+            fields:
+              - { label: Koptitel, name: title, widget: string }
+              - { label: Bijschrift foto, name: img_caption, widget: string }
+              - { label: Inleiding, name: intro, widget: text }
+              - label: Opsommingspunten
+                name: items
+                widget: list
+                field: { label: Punt, name: item, widget: text }
+              - { label: Vetgedrukte slotzin, name: emphasis, widget: text }
+
+          # ── EERDERE PLANNEN ───────────────────────────────────
+          - label: Sectie — Eerdere plannen
+            name: eerdere_plannen
+            widget: object
+            fields:
+              - { label: Koptitel, name: title, widget: string }
+              - { label: Bijschrift foto links, name: img_caption_1, widget: string }
+              - { label: Bijschrift foto rechts, name: img_caption_2, widget: string }
+              - { label: Alinea 1, name: para_1, widget: text }
+              - { label: Alinea 2, name: para_2, widget: text }
+              - { label: Alinea 3, name: para_3, widget: text }
+              - { label: Alinea 4, name: para_4, widget: text }
+              - { label: Alinea 5, name: para_5, widget: text }
+
+          # ── DOEL ──────────────────────────────────────────────
+          - label: Sectie — Doel van het Burgerinitiatief
+            name: doel
+            widget: object
+            fields:
+              - { label: Koptitel, name: title, widget: string }
+              - { label: Alinea 1, name: para_1, widget: text }
+              - { label: Alinea 2, name: para_2, widget: text }
+              - { label: Kaarten tussenkopje, name: cards_title, widget: string }
+              - label: Kaarten (4 redenen)
+                name: cards
+                widget: list
+                fields:
+                  - { label: Icoon, name: icon, widget: string }
+                  - { label: Titel, name: title, widget: string }
+                  - { label: Tekst, name: text, widget: text }
+
+          # ── ONDERSTEUNING ─────────────────────────────────────
+          - label: Sectie — Ondersteuning
+            name: ondersteuning
+            widget: object
+            fields:
+              - { label: Koptitel, name: title, widget: string }
+              - { label: Inleiding, name: intro, widget: string }
+              - label: Ondersteunende organisaties
+                name: items
+                widget: list
+                field: { label: Organisatie, name: item, widget: string }
+
+          # ── VERKIEZINGEN ──────────────────────────────────────
+          - label: Sectie — Gemeenteraadsverkiezingen
+            name: verkiezingen
+            widget: object
+            fields:
+              - { label: Koptitel, name: title, widget: string }
+              - { label: Alinea 1, name: para_1, widget: text }
+              - { label: Alinea 2 (inleiding lijst), name: para_2, widget: string }
+              - label: Inhoudelijke argumenten (lijst)
+                name: items
+                widget: list
+                field: { label: Argument, name: item, widget: string }
+              - { label: Alinea 3, name: para_3, widget: text }
+              - { label: Alinea 4, name: para_4, widget: text }
+              - { label: Politieke standpunten koptitel, name: parties_title, widget: string }
+              - label: Politieke partijen
+                name: parties
+                widget: list
+                fields:
+                  - { label: Partijnaam, name: name, widget: string }
+                  - { label: Standpunt, name: text, widget: text }
+
+          # ── PLANNING ──────────────────────────────────────────
+          - label: Sectie — Planning en voortgang
+            name: planning
+            widget: object
+            fields:
+              - { label: Koptitel, name: title, widget: string }
+              - { label: Alinea 1, name: para_1, widget: text }
+              - { label: Alinea 2, name: para_2, widget: text }
+
+          # ── OP DE HOOGTE ──────────────────────────────────────
+          - label: Sectie — Blijf op de hoogte
+            name: op_de_hoogte
+            widget: object
+            fields:
+              - { label: Koptitel, name: title, widget: string }
+              - { label: Alinea 1, name: para_1, widget: text }
+              - { label: Alinea 2 (voor e-mailadres), name: para_2, widget: string }
+
+          # ── CONTACT ───────────────────────────────────────────
+          - label: Sectie — Contact & delen
+            name: contact
+            widget: object
+            fields:
+              - { label: Koptitel, name: title, widget: string }
+              - { label: Delen koptitel, name: share_title, widget: string }
+              - { label: Delen tekst, name: share_text, widget: text }
+              - { label: Bronnen koptitel, name: sources_title, widget: string }

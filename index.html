@@ -1,3 +1,5 @@
+---
+---
 <!doctype html>
 <html lang="nl">
     <head>
@@ -24,7 +26,7 @@
         />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="nl_NL" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="{{ '/style.css' | relative_url }}" />
     </head>
     <body>
         <!-- NAVIGATIE -->
@@ -54,40 +56,19 @@
         </nav>
 
         <!-- HERO -->
+        {% assign c = site.data.content %}
         <header class="hero" id="hero">
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Burgerinitiatief Leyduin</h1>
-                    <p class="hero-subtitle">
-                        Herstel de directe veilige verbinding voor wandelaars
-                        tussen Heemstede en Buitenplaats Leyduin
-                    </p>
-                    <p>
-                        Het Burgerinitiatief Leyduin is een initiatief van
-                        inwoners van Heemstede dat pleit voor de realisatie van
-                        een voetgangerstunnel (met fietsgoot) onder het spoor
-                        bij Buitenplaats Leyduin.
-                    </p>
-                    <p>
-                        Aanleiding is de definitieve sluiting van de onbewaakte
-                        spoorwegovergang op 29&nbsp;maart&nbsp;2024 door
-                        ProRail. Sindsdien ontbreekt een veilige en directe
-                        toegang voor wandelaars tot het natuurgebied.
-                    </p>
-                    <p>
-                        Het initiatief werd ondertekend door ruim 1600 inwoners
-                        en op 17&nbsp;april&nbsp;2025 officieel ingediend bij de
-                        burgemeester. Een tunneltje herstelt een veilige en
-                        directe verbinding met het natuurgebied na de afsluiting
-                        van de onbewaakte spoorwegovergang in maart 2024 door
-                        ProRail.
-                    </p>
+                    <h1>{{ c.hero.title }}</h1>
+                    <p class="hero-subtitle">{{ c.hero.subtitle }}</p>
+                    <p>{{ c.hero.intro_1 }}</p>
+                    <p>{{ c.hero.intro_2 }}</p>
+                    <p>{{ c.hero.intro_3 }}</p>
                     <div class="hero-actions">
-                        <a href="#doel" class="btn btn-primary"
-                            >Waarom een tunneltje?</a
-                        >
-                        <a href="#contact" class="btn btn-secondary">Contact</a>
+                        <a href="#doel" class="btn btn-primary">{{ c.hero.btn_primary }}</a>
+                        <a href="#contact" class="btn btn-secondary">{{ c.hero.btn_secondary }}</a>
                     </div>
                 </div>
             </div>
@@ -97,98 +78,46 @@
             <!-- TOEGANG TOT BUITENPLAATS LEYDUIN -->
             <section id="toegang" class="section">
                 <div class="container">
-                    <h2>Toegang tot Buitenplaats Leyduin</h2>
+                    <h2>{{ c.toegang.title }}</h2>
 
                     <figure class="section-figure">
                         <img
-                            src="assets/bord-sluiting-overgang.webp"
+                            src="{{ '/assets/bord-sluiting-overgang.webp' | relative_url }}"
                             alt="Protestbord bij de overgang: Deze overgang dreigt te sluiten na meer dan 180 jaar zonder alternatief"
                             loading="lazy"
                         />
-                        <figcaption>
-                            De onbewaakte overgang bij Leyduin dreigde te
-                            sluiten na meer dan 180 jaar &mdash; zonder
-                            alternatief.
-                        </figcaption>
+                        <figcaption>{{ c.toegang.img_caption }}</figcaption>
                     </figure>
 
-                    <p>
-                        De onbewaakte spoorwegovergang bij het Laantje van
-                        Leyduin was jarenlang een geliefde wandel- en
-                        fietsverbinding tussen de Leidsevaartweg in Heemstede en
-                        Buitenplaats Leyduin. Voor veel inwoners was dit de
-                        toegang tot een gezond ommetje in de natuur.
-                    </p>
-                    <p>
-                        In het kader van een landelijk veiligheidsprogramma
-                        sluit ProRail onbewaakte spoorwegovergangen (NABO's). De
-                        overgang bij Leyduin is daarom definitief afgesloten op
-                        29&nbsp;maart&nbsp;2024. Daarmee is een belangrijke
-                        verbinding voor wandelaars verdwenen.
-                    </p>
+                    <p>{{ c.toegang.para_1 }}</p>
+                    <p>{{ c.toegang.para_2 }}</p>
                 </div>
             </section>
 
             <!-- GEVOLGEN VAN DE SLUITING -->
             <section id="gevolgen" class="section section-alt">
                 <div class="container">
-                    <h2>Gevolgen van de sluiting</h2>
+                    <h2>{{ c.gevolgen.title }}</h2>
 
                     <figure class="section-figure">
                         <img
-                            src="assets/bewoners-protest-spoor.webp"
+                            src="{{ '/assets/bewoners-protest-spoor.webp' | relative_url }}"
                             alt="Bewoners verzetten zich tegen de komende afsluiting bij de spoorwegovergang Leyduin"
                             loading="lazy"
                         />
-                        <figcaption>
-                            Bewoners verzetten zich tegen de komende afsluiting,
-                            een zonder alternatief. Foto United
-                            Photos/Toussaint Kluiters
-                        </figcaption>
+                        <figcaption>{{ c.gevolgen.img_caption }}</figcaption>
                     </figure>
 
-                    <p>
-                        Sinds de afsluiting zijn bezoekers van Buitenplaats
-                        Leyduin aangewezen op de bewaakte spoorwegovergang bij
-                        de Manpadslaan. Dit leidt tot meerdere problemen:
-                    </p>
+                    <p>{{ c.gevolgen.intro }}</p>
 
                     <ul class="check-list negative">
-                        <li>
-                            De omweg is aanzienlijk: vanaf de Letterbrug bij de
-                            Amstellaan is de route heen en terug circa
-                            2,5&nbsp;kilometer langer.
-                        </li>
-                        <li>
-                            Wandelaars moeten gebruikmaken van een druk en smal
-                            fietspad langs de Leidsevaartweg, ongeschikt voor
-                            gecombineerd gebruik door fietsers, wandelaars,
-                            kinderwagens, honden en rolstoelen.
-                        </li>
-                        <li>
-                            De Manpadslaan is een smalle weg zonder veilige
-                            loopruimte.
-                        </li>
-                        <li>
-                            In de toekomst zullen er vaker treinen rijden tussen
-                            Haarlem en Leiden, waardoor de slagbomen bij de
-                            Manpadslaan nog vaker sluiten en de doorstroming
-                            verslechtert.
-                        </li>
-                        <li>
-                            Vanaf de Leidsevaartweg is er vanaf Station
-                            Heemstede Aerdenhout tot Bennebroek over
-                            4,5&nbsp;kilometer slechts 1 toegang tot
-                            Buitenplaats Leyduin.
-                        </li>
+                        {% for item in c.gevolgen.items %}
+                        <li>{{ item }}</li>
+                        {% endfor %}
                     </ul>
 
                     <p class="emphasis-block">
-                        <strong
-                            >Kortom: de huidige situatie is onveilig,
-                            onpraktisch en ontmoedigt recreatief gebruik van het
-                            gebied.</strong
-                        >
+                        <strong>{{ c.gevolgen.emphasis }}</strong>
                     </p>
                 </div>
             </section>
@@ -196,138 +125,53 @@
             <!-- EERDERE PLANNEN VOOR EEN OPLOSSING -->
             <section id="eerdere-plannen" class="section">
                 <div class="container">
-                    <h2>Eerdere plannen voor een oplossing</h2>
+                    <h2>{{ c.eerdere_plannen.title }}</h2>
 
                     <div class="two-col-figures">
                         <figure class="section-figure">
                             <img
-                                src="assets/petitie-aanbieding-raad.webp"
+                                src="{{ '/assets/petitie-aanbieding-raad.webp' | relative_url }}"
                                 alt="Aanbieding van het burgerinitiatief met 1.678 handtekeningen aan de burgemeester"
                                 loading="lazy"
                             />
-                            <figcaption>
-                                Aanbieding van het burgerinitiatief met 1.678
-                                handtekeningen aan de burgemeester.
-                            </figcaption>
+                            <figcaption>{{ c.eerdere_plannen.img_caption_1 }}</figcaption>
                         </figure>
                         <figure class="section-figure">
                             <img
-                                src="assets/krant-massale-steun.webp"
+                                src="{{ '/assets/krant-massale-steun.webp' | relative_url }}"
                                 alt="Krantenartikel: Massale steun voor aanleg voetgangerstunnel Leyduin"
                                 loading="lazy"
                             />
-                            <figcaption>
-                                Massale steun voor aanleg voetgangerstunnel
-                                Leyduin &mdash; Haarlems Dagblad.
-                            </figcaption>
+                            <figcaption>{{ c.eerdere_plannen.img_caption_2 }}</figcaption>
                         </figure>
                     </div>
 
-                    <p>
-                        Al v&oacute;&oacute;r de sluiting is gezocht naar een
-                        veilig alternatief. In maart 2022 werd een
-                        intentieovereenkomst tussen de gemeente Heemstede en
-                        ProRail getekend om een voetgangerstunnel met fietsgoot
-                        te bouwen, gesitueerd op het weiland links van het
-                        voormalige pompstation langs de Leidsevaartweg.
-                    </p>
-                    <p>
-                        De bouw is echter nooit gestart. Sommige politieke
-                        partijen wilden alleen instemmen met een volwaardige
-                        fietstunnel met hellingen. Dit plan bleek financieel
-                        onaantrekkelijk en verdween vervolgens van de agenda.
-                    </p>
-                    <p>
-                        Toen duidelijk werd dat de overgang definitief zou
-                        sluiten en de tunneloptie was geschrapt, is een
-                        actiegroep opgericht om opnieuw aandacht te vragen voor
-                        een veilige doorgang naar Leyduin. Volgens ons is een
-                        tunneltje de beste oplossing hiervoor.
-                    </p>
-                    <p>
-                        Het was inmiddels ook duidelijk dat de gemeente daar
-                        zelf verder geen alternatieve plannen of voorzieningen
-                        voor had. Een Burgerinitiatief biedt de mogelijkheid om
-                        de tunneloptie opnieuw op de agenda van de gemeenteraad
-                        te krijgen.
-                    </p>
-                    <p>
-                        Binnen korte tijd werden 1.700 handtekeningen en vele
-                        steunbetuigingen van Heemsteedse inwoners opgehaald die
-                        nodig waren voor het indienen van het eerste
-                        Burgerinitiatief in deze gemeente. Het initiatief is in
-                        april 2025 aangeboden en staat nu op de agenda van de
-                        gemeenteraad om de haalbaarheid en financiering te
-                        onderzoeken.
-                    </p>
+                    <p>{{ c.eerdere_plannen.para_1 }}</p>
+                    <p>{{ c.eerdere_plannen.para_2 }}</p>
+                    <p>{{ c.eerdere_plannen.para_3 }}</p>
+                    <p>{{ c.eerdere_plannen.para_4 }}</p>
+                    <p>{{ c.eerdere_plannen.para_5 }}</p>
                 </div>
             </section>
 
             <!-- DOEL VAN HET BURGERINITIATIEF -->
             <section id="doel" class="section section-alt">
                 <div class="container">
-                    <h2>Doel van het Burgerinitiatief</h2>
+                    <h2>{{ c.doel.title }}</h2>
 
-                    <p>
-                        Met het Burgerinitiatief Leyduin verzoeken de indieners
-                        de gemeenteraad van Heemstede om die besluiten te nemen
-                        die de realisatie van een eenvoudige voetgangerstunnel
-                        (met fietsgoot) onder het spoor bij Leyduin mogelijk
-                        maken. Dit ter vervanging van de inmiddels afgesloten
-                        Niet Actief Beveiligde Overweg (NABO).
-                    </p>
-                    <p>
-                        Het doel is een veilige, toegankelijke onderdoorgang te
-                        realiseren die de verbinding met Leyduin herstelt voor
-                        het gezonde en veilige &ldquo;ommetje&rdquo;.
-                    </p>
+                    <p>{{ c.doel.para_1 }}</p>
+                    <p>{{ c.doel.para_2 }}</p>
 
-                    <h3>Waarom een tunneltje?</h3>
+                    <h3>{{ c.doel.cards_title }}</h3>
 
                     <div class="card-grid">
+                        {% for card in c.doel.cards %}
                         <article class="card">
-                            <div class="card-icon" aria-hidden="true">🛡️</div>
-                            <h3>Veiligheid</h3>
-                            <p>
-                                Een tunneltje scheidt langzaam verkeer volledig
-                                van het spoor. Geen gelijkvloerse kruising meer,
-                                dus maximale veiligheid voor voetgangers en
-                                fietsers.
-                            </p>
+                            <div class="card-icon" aria-hidden="true">{{ card.icon }}</div>
+                            <h3>{{ card.title }}</h3>
+                            <p>{{ card.text }}</p>
                         </article>
-
-                        <article class="card">
-                            <div class="card-icon" aria-hidden="true">🚶</div>
-                            <h3>Bereikbaarheid</h3>
-                            <p>
-                                De huidige omleiding via de Manspadlaan kost
-                                wandelaars aanzienlijk meer tijd. Een tunnel
-                                herstelt de korte, directe route naar het
-                                natuurgebied.
-                            </p>
-                        </article>
-
-                        <article class="card">
-                            <div class="card-icon" aria-hidden="true">🌳</div>
-                            <h3>Recreatie &amp; natuur</h3>
-                            <p>
-                                Buitenplaats Leyduin en het achterliggende
-                                duingebied zijn van grote recreatieve waarde.
-                                Een goede verbinding spreidt de recreatiedruk en
-                                maakt de natuur toegankelijk voor meer mensen.
-                            </p>
-                        </article>
-
-                        <article class="card">
-                            <div class="card-icon" aria-hidden="true">❤️</div>
-                            <h3>Gezondheid</h3>
-                            <p>
-                                Wandelen en fietsen in de natuur dragen bij aan
-                                lichamelijke en mentale gezondheid. Een directe,
-                                aantrekkelijke route verlaagt de drempel om naar
-                                buiten te gaan.
-                            </p>
-                        </article>
+                        {% endfor %}
                     </div>
                 </div>
             </section>
@@ -335,15 +179,12 @@
             <!-- ONDERSTEUNING -->
             <section id="ondersteuning" class="section">
                 <div class="container">
-                    <h2>Ondersteuning</h2>
-                    <p>
-                        Het plan in het Burgerinitiatief wordt ondersteund door
-                        onder andere:
-                    </p>
+                    <h2>{{ c.ondersteuning.title }}</h2>
+                    <p>{{ c.ondersteuning.intro }}</p>
                     <ul class="support-list">
-                        <li>Wandelnet</li>
-                        <li>Te Voet</li>
-                        <li>Landschap Noord-Holland</li>
+                        {% for item in c.ondersteuning.items %}
+                        <li>{{ item }}</li>
+                        {% endfor %}
                     </ul>
                 </div>
             </section>
@@ -351,60 +192,27 @@
             <!-- GEMEENTERAADSVERKIEZINGEN -->
             <section id="verkiezingen" class="section section-alt">
                 <div class="container">
-                    <h2>
-                        Gemeenteraadsverkiezingen &mdash; 18&nbsp;maart&nbsp;2026
-                    </h2>
+                    <h2>{{ c.verkiezingen.title }}</h2>
 
-                    <p>
-                        Het burgerinitiatief voor een fietstunnel bij Leyduin in
-                        Heemstede wordt gesteund door partijen die inzetten op
-                        verkeersveiligheid en duurzame recreatie.
-                    </p>
-                    <p>
-                        In de raad is er aandacht voor de inhoudelijke
-                        argumenten:
-                    </p>
+                    <p>{{ c.verkiezingen.para_1 }}</p>
+                    <p>{{ c.verkiezingen.para_2 }}</p>
                     <ul>
-                        <li>veiligheid</li>
-                        <li>natuurbeleving</li>
-                        <li>verminderde verkeersdrukte</li>
-                        <li>duurzaam recreatief gebruik</li>
+                        {% for item in c.verkiezingen.items %}
+                        <li>{{ item }}</li>
+                        {% endfor %}
                     </ul>
-                    <p>
-                        Er wordt ingezet op gesprekken met ProRail en Landschap
-                        Noord-Holland over de financiering. De raad heeft
-                        gevraagd om een nader onderzoek door het college.
-                    </p>
-                    <p>
-                        Met het oog op de gemeenteraadsverkiezingen op
-                        18&nbsp;maart&nbsp;2026 is het interessant de
-                        standpunten van de verschillende partijen na te gaan.
-                    </p>
+                    <p>{{ c.verkiezingen.para_3 }}</p>
+                    <p>{{ c.verkiezingen.para_4 }}</p>
 
-                    <h3>Politieke standpunten</h3>
+                    <h3>{{ c.verkiezingen.parties_title }}</h3>
 
                     <div class="card-grid political-grid">
+                        {% for party in c.verkiezingen.parties %}
                         <article class="card political-card">
-                            <h4>GroenLinks</h4>
-                            <p>
-                                Uitgesproken voorstander. Het afsluiten van de
-                                verbinding dwingt mensen vaker de auto te
-                                pakken. Het initiatief verbetert veiligheid en
-                                vermindert verkeersdruk.
-                            </p>
+                            <h4>{{ party.name }}</h4>
+                            <p>{{ party.text }}</p>
                         </article>
-
-                        <article class="card political-card">
-                            <h4>CDA</h4>
-                            <p>
-                                Benadrukt het belang van een goede en veilige
-                                recreatieve verbinding. Heeft met een motie in
-                                de raad het onderzoek naar de voetgangerstunnel
-                                versneld.
-                            </p>
-                        </article>
-
-                        <!-- TODO: missing content for other political parties (D66, VVD, HBB, etc.) -->
+                        {% endfor %}
                     </div>
                 </div>
             </section>
@@ -412,32 +220,19 @@
             <!-- PLANNING EN VOORTGANG -->
             <section id="planning" class="section">
                 <div class="container">
-                    <h2>Planning en voortgang</h2>
-                    <p>
-                        De gewenste einddatum voor afronding van de onderzoeken
-                        en verdere uitwerking door de gemeenteraad was
-                        oorspronkelijk december 2025.
-                    </p>
-                    <p>
-                        In de begrotingswijzigingen voor 2026 wordt de
-                        financi&euml;le doorwerking van diverse projecten verder
-                        verwerkt.
-                    </p>
+                    <h2>{{ c.planning.title }}</h2>
+                    <p>{{ c.planning.para_1 }}</p>
+                    <p>{{ c.planning.para_2 }}</p>
                 </div>
             </section>
 
             <!-- BLIJF OP DE HOOGTE -->
             <section id="op-de-hoogte" class="section section-cta">
                 <div class="container">
-                    <h2>Blijf op de hoogte</h2>
+                    <h2>{{ c.op_de_hoogte.title }}</h2>
+                    <p>{{ c.op_de_hoogte.para_1 }}</p>
                     <p>
-                        Via deze website willen we alle mensen die het
-                        Burgerinitiatief gesteund hebben bedanken en informeren.
-                        Hier delen we informatie en houden we u op de hoogte van
-                        de stand van zaken.
-                    </p>
-                    <p>
-                        Voor vragen en suggesties:<br />
+                        {{ c.op_de_hoogte.para_2 }}<br />
                         <strong>
                             <a
                                 href="#"
@@ -454,7 +249,7 @@
             <!-- CONTACT & DELEN -->
             <section id="contact" class="section">
                 <div class="container">
-                    <h2>Contact &amp; delen</h2>
+                    <h2>{{ c.contact.title }}</h2>
                     <div class="contact-grid">
                         <div class="contact-item">
                             <h4>Contactgegevens</h4>
@@ -469,16 +264,11 @@
                             </p>
                         </div>
                         <div class="contact-item">
-                            <h4>Deel dit initiatief</h4>
-                            <!-- TODO: missing content for social sharing links -->
-                            <p>
-                                Vertel buren, vrienden en familie over het
-                                burgerinitiatief.
-                            </p>
+                            <h4>{{ c.contact.share_title }}</h4>
+                            <p>{{ c.contact.share_text }}</p>
                         </div>
                         <div class="contact-item">
-                            <h4>Bronnen en links</h4>
-                            <!-- TODO: missing content for detailed resource links -->
+                            <h4>{{ c.contact.sources_title }}</h4>
                         </div>
                     </div>
                 </div>

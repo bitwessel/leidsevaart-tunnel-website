@@ -1,0 +1,12 @@
+title: Burgerinitiatief Leyduin
+description: Burgerinitiatief voor een veilige voetgangerstunnel bij Leyduin in Heemstede
+url: "https://bitwessel.github.io"
+baseurl: "/leidsevaart-tunnel-website"
+
+# Jekyll settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude admin config from processed output
+exclude:
+  - README.md
