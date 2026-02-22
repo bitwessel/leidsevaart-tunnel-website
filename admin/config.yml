@@ -3,6 +3,7 @@ backend:
   repo: bitwessel/leidsevaart-tunnel-website
   branch: main
   base_url: https://api.netlify.com
+  site_domain: jolly-otter-27d154.netlify.app
 
 # No image uploading for now; mods edit text only
 media_folder: assets
