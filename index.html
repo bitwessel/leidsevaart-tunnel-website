@@ -90,9 +90,9 @@
         <!-- NAVIGATIE -->
         <nav class="main-nav" aria-label="Hoofdnavigatie">
             <div class="nav-inner">
-                <a href="#" class="nav-logo" aria-label="Naar bovenkant pagina"
-                    >🌿 Burgerinitiatief Leyduin</a
-                >
+                <a href="#" class="nav-logo" aria-label="Naar bovenkant pagina">
+                    <img src="{{ '/assets/favicon.svg' | relative_url }}" alt="" class="nav-logo-icon"> Burgerinitiatief Leyduin
+                </a>
                 <button
                     class="nav-toggle"
                     aria-label="Menu openen"
@@ -422,7 +422,6 @@
                         });
                     });
 
-                // Email obfuscatie (bescherming tegen scrapers)
                 document
                     .querySelectorAll(".email-link")
                     .forEach(function (link) {
