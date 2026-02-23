@@ -1,27 +1,34 @@
 hero:
   title: Burgerinitiatief Leyduin
-  subtitle: Herstel de directe veilige verbinding voor wandelaars tussen Heemstede en Buitenplaats Leyduin
-  intro_1: Het Burgerinitiatief Leyduin is een initiatief van inwoners van Heemstede dat pleit voor de realisatie van een voetgangerstunnel (met fietsgoot) onder het spoor bij Buitenplaats Leyduin.
-  intro_2: Aanleiding is de definitieve sluiting van de onbewaakte spoorwegovergang op 29 maart 2024 door ProRail. Sindsdien ontbreekt een veilige en directe toegang voor wandelaars tot het natuurgebied.
-  intro_3: Het initiatief werd ondertekend door ruim 1600 inwoners en op 17 april 2025 officieel ingediend bij de burgemeester. Een tunneltje herstelt een veilige en directe verbinding met het natuurgebied na de afsluiting van de onbewaakte spoorwegovergang in maart 2024 door ProRail.
+  subtitle: Herstel de directe veilige verbinding voor wandelaars tussen Heemstede en Buitenplaats Leyduin!
+  intro_1: Met het eerste Burgerinitiatief Leyduin pleiten inwoners van Heemstede voor de realisatie van een voetgangerstunnel (met fietsgoot) onder het spoor voor een veilige en directe route en toegang voor wandelaars tot het natuurgebied.
+  intro_2: Bent u ook voor een voetgangerstunnel naar Leyduin? Het Burgerinitiatief zal na de Gemeenteraadsverkiezingen op 18 maart a.s. behandeld worden door de Gemeenteraad in Heemstede.
+  intro_3: |-
+    Grijp uw kans dus om uw stem te laten horen bij deze verkiezingen! Bent u vóór het tunneltje?
+    Alle politieke partijen in Heemstede hebben het Burgerinitiatief gesteund maar met name CDA en GroenLinks-PvdA maken zich ook in hun verkiezingsprogramma sterk voor de tunnel!
   btn_primary: Waarom een tunneltje?
   btn_secondary: Contact
 toegang:
   title: Toegang tot Buitenplaats Leyduin
   img_caption: De onbewaakte overgang bij Leyduin dreigde te sluiten na meer dan 180 jaar — zonder alternatief.
   para_1: De onbewaakte spoorwegovergang bij het Laantje van Leyduin was jarenlang een geliefde wandel- en fietsverbinding tussen de Leidsevaartweg in Heemstede en Buitenplaats Leyduin. Voor veel inwoners was dit de toegang tot een gezond ommetje in de natuur.
-  para_2: In het kader van een landelijk veiligheidsprogramma sluit ProRail onbewaakte spoorwegovergangen (NABO's). De overgang bij Leyduin is daarom definitief afgesloten op 29 maart 2024. Daarmee is een belangrijke verbinding voor wandelaars verdwenen.
+  para_2: |-
+    In het kader van een landelijk veiligheidsprogramma sluit ProRail onbewaakte spoorwegovergangen (NABO's). De overgang bij Leyduin werd definitief afgesloten op 29 maart 2024 door ProRail. 
+
+    Sindsdien ontbreekt een veilige en directe toegang voor wandelaars tot Leyduin en het achterliggende duingebied. Met een tunneltje kan deze toegang weer hersteld worden.
+
+    Het Burgerinitiatief om dit tunneltje op de agenda van de Gemeenteraad te plaatsen, werd ondertekend door 1678 inwoners en is op 17 april 2025 officieel ingediend bij de burgemeester.
 gevolgen:
   title: Gevolgen van de sluiting
   img_caption: Bewoners verzetten zich tegen de komende afsluiting, een zonder alternatief. Foto United Photos/Toussaint Kluiters
   intro: 'Sinds de afsluiting zijn bezoekers van Buitenplaats Leyduin aangewezen op de bewaakte spoorwegovergang bij de Manpadslaan. Dit leidt tot meerdere problemen:'
   items:
-    - 'De omweg is aanzienlijk: vanaf de Letterbrug bij de Amstellaan is de route heen en terug circa 2,5 kilometer langer.'
-    - Wandelaars moeten gebruikmaken van een druk en smal fietspad langs de Leidsevaartweg, ongeschikt voor gecombineerd gebruik door fietsers, wandelaars, kinderwagens, honden en rolstoelen.
-    - De Manpadslaan is een smalle weg zonder veilige loopruimte.
+    - 'De omweg is aanzienlijk: vanaf de Amstelbrug in de Rivierenbuurt is de route heen en terug circa 2,5 kilometer langer. Voor wandelaars die een "ommetje" willen maken is dit een grote barrière.'
+    - Wandelaars moeten gebruikmaken van een druk en smal fietspad langs de Leidsevaartweg, ongeschikt voor gecombineerd gebruik door fietsers, wandelaars, kinderwagens, honden en rolstoelen. Zeker met fietsverkeer in twee richtingen en het toegenomen gebruik van elektrische (bak)fietsen en fatbikes.
+    - De route via Manpadslaan is ook een smalle weg zonder veilige loopruimte. Via deze route is het doel voor het maken van een "ommetje" ook geen optie.
     - In de toekomst zullen er vaker treinen rijden tussen Haarlem en Leiden, waardoor de slagbomen bij de Manpadslaan nog vaker sluiten en de doorstroming verslechtert.
-    - Vanaf de Leidsevaartweg is er vanaf Station Heemstede Aerdenhout tot Bennebroek over 4,5 kilometer slechts 1 toegang tot Buitenplaats Leyduin.
-  emphasis: 'Kortom: de huidige situatie is onveilig, onpraktisch en ontmoedigt recreatief gebruik van het gebied.'
+    - Vanaf de Leidsevaartweg is er vanaf Station Heemstede Aerdenhout tot Bennebroek over 4,5 kilometer slechts 1(!) toegang tot Buitenplaats Leyduin. Oók een risico bij incidenten aan de overgang Manpadslaan.
+  emphasis: 'Kortom: de huidige situatie is onveilig, onpraktisch en ontmoedigt recreatief gebruik van het gebied door wandelaars.'
 eerdere_plannen:
   title: Eerdere plannen voor een oplossing
   img_caption_1: Aanbieding van het burgerinitiatief met 1.678 handtekeningen aan de burgemeester.
@@ -33,13 +40,13 @@ eerdere_plannen:
   para_5: Binnen korte tijd werden 1.700 handtekeningen en vele steunbetuigingen van Heemsteedse inwoners opgehaald die nodig waren voor het indienen van het eerste Burgerinitiatief in deze gemeente. Het initiatief is in april 2025 aangeboden en staat nu op de agenda van de gemeenteraad om de haalbaarheid en financiering te onderzoeken.
 doel:
   title: Doel van het Burgerinitiatief
-  para_1: Met het Burgerinitiatief Leyduin verzoeken de indieners de gemeenteraad van Heemstede om die besluiten te nemen die de realisatie van een eenvoudige voetgangerstunnel (met fietsgoot) onder het spoor bij Leyduin mogelijk maken. Dit ter vervanging van de inmiddels afgesloten Niet Actief Beveiligde Overweg (NABO).
+  para_1: Met het Burgerinitiatief Leyduin verzoeken de indieners de Gemeenteraad van Heemstede om die besluiten te nemen die de realisatie van een eenvoudige voetgangerstunnel (met fietsgoot) onder het spoor bij Leyduin mogelijk maken. Dit ter vervanging van de inmiddels afgesloten Niet Actief Beveiligde Overweg (NABO).
   para_2: Het doel is een veilige, toegankelijke onderdoorgang te realiseren die de verbinding met Leyduin herstelt voor het gezonde en veilige "ommetje".
   cards_title: Waarom een tunneltje?
   cards:
     - icon: 🛡️
       title: Veiligheid
-      text: Een tunneltje scheidt langzaam verkeer volledig van het spoor. Geen gelijkvloerse kruising meer, dus maximale veiligheid voor voetgangers en fietsers.
+      text: Een tunneltje scheidt langzaam verkeer volledig van het spoor en geeft daarmee maximale veiligheid voor voetgangers en fietsers. Ook zorgt een tunnel voor veiliger verkeer op het fietspad langs de Leidsevaartweg en op de Manpadslaan.
     - icon: 🚶
       title: Bereikbaarheid
       text: De huidige omleiding via de Manspadlaan kost wandelaars aanzienlijk meer tijd. Een tunnel herstelt de korte, directe route naar het natuurgebied.
@@ -48,7 +55,7 @@ doel:
       text: Buitenplaats Leyduin en het achterliggende duingebied zijn van grote recreatieve waarde. Een goede verbinding spreidt de recreatiedruk en maakt de natuur toegankelijk voor meer mensen.
     - icon: ❤️
       title: Gezondheid
-      text: Wandelen en fietsen in de natuur dragen bij aan lichamelijke en mentale gezondheid. Een directe, aantrekkelijke route verlaagt de drempel om naar buiten te gaan.
+      text: Wandelen en fietsen in de natuur dragen bij aan lichamelijke en mentale gezondheid. Een directe en veilige route verlaagt de drempel om naar buiten te gaan.
 ondersteuning:
   title: Ondersteuning
   intro: 'Het plan in het Burgerinitiatief wordt ondersteund door onder andere:'
