@@ -739,6 +739,23 @@ li {
       margin-bottom: var(--space-xs);
 }
 
+.developer-credit {
+    margin-top: var(--space-lg);
+    font-size: 0.85rem;
+    padding-top: var(--space-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.developer-credit a {
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.developer-credit a:hover {
+    opacity: 0.8;
+}
+
 /* =============================================
    RESPONSIVE
    ============================================= */
