@@ -1,32 +1,78 @@
 ---
 ---
+
 <!doctype html>
 <html lang="nl">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Burgerinitiatief Leyduin — Heemstede</title>
+
+        <title>Voetgangerstunnel Leyduin – Burgerinitiatief Heemstede</title>
         <meta
             name="description"
-            content="Burgerinitiatief voor een veilige voetgangerstunnel bij Leyduin in Heemstede. Herstel de directe veilige verbinding voor wandelaars tussen Heemstede en Buitenplaats Leyduin."
+            content="Burgerinitiatief voor een veilige voetgangerstunnel bij Leyduin in Heemstede. Herstel de directe, veilige verbinding voor wandelaars tussen Heemstede en Buitenplaats Leyduin."
         />
+
+        <!-- Canonical -->
+        <link rel="canonical" href="https://burgerinitiatief-leyduin.nl/" />
+
+        <!-- Robots -->
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+
+        <!-- Open Graph -->
+        <meta property="og:site_name" content="Burgerinitiatief Leyduin" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="nl_NL" />
+        <meta
+            property="og:url"
+            content="https://burgerinitiatief-leyduin.nl/"
+        />
+        <meta
+            property="og:title"
+            content="Voetgangerstunnel Leyduin – Burgerinitiatief Heemstede"
+        />
+        <meta
+            property="og:description"
+            content="Burgerinitiatief voor een veilige voetgangerstunnel bij Leyduin in Heemstede. Herstel de directe, veilige verbinding voor wandelaars tussen Heemstede en Buitenplaats Leyduin."
+        />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary" />
+        <meta
+            name="twitter:title"
+            content="Voetgangerstunnel Leyduin – Burgerinitiatief Heemstede"
+        />
+        <meta
+            name="twitter:description"
+            content="Burgerinitiatief voor een veilige voetgangerstunnel bij Leyduin in Heemstede. Herstel de directe, veilige verbinding voor wandelaars tussen Heemstede en Buitenplaats Leyduin."
+        />
+
+        <!-- Structured data -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Burgerinitiatief Leyduin",
+                "url": "https://burgerinitiatief-leyduin.nl/",
+                "description": "Burgerinitiatief voor een veilige voetgangerstunnel bij Leyduin in Heemstede.",
+                "areaServed": "Heemstede",
+                "inLanguage": "nl-NL"
+            }
+        </script>
+
+        <!-- Optional: keywords/author (niet belangrijk voor Google, maar kan blijven) -->
+        <meta name="author" content="Burgerinitiatief Leyduin" />
         <meta
             name="keywords"
             content="Leyduin, tunnel, Heemstede, burgerinitiatief, NABO, spoorwegovergang, voetgangerstunnel, Leidsevaart"
         />
-        <meta name="author" content="Burgerinitiatief Leyduin" />
-        <meta name="robots" content="index, follow" />
-        <meta
-            property="og:title"
-            content="Burgerinitiatief Leyduin — Heemstede"
+
+        <!-- Favicons -->
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%8C%BF</text></svg>"
         />
-        <meta
-            property="og:description"
-            content="Herstel de directe veilige verbinding voor wandelaars tussen Heemstede en Buitenplaats Leyduin."
-        />
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="nl_NL" />
+
         <link rel="stylesheet" href="{{ '/style.css' | relative_url }}" />
     </head>
     <body>
@@ -68,8 +114,12 @@
                     <p>{{ c.hero.intro_2 }}</p>
                     <p>{{ c.hero.intro_3 }}</p>
                     <div class="hero-actions">
-                        <a href="#doel" class="btn btn-primary">{{ c.hero.btn_primary }}</a>
-                        <a href="#contact" class="btn btn-secondary">{{ c.hero.btn_secondary }}</a>
+                        <a href="#doel" class="btn btn-primary"
+                            >{{ c.hero.btn_primary }}</a
+                        >
+                        <a href="#contact" class="btn btn-secondary"
+                            >{{ c.hero.btn_secondary }}</a
+                        >
                     </div>
                 </div>
             </div>
@@ -135,7 +185,9 @@
                                 alt="Aanbieding van het burgerinitiatief met 1.678 handtekeningen aan de burgemeester"
                                 loading="lazy"
                             />
-                            <figcaption>{{ c.eerdere_plannen.img_caption_1 }}</figcaption>
+                            <figcaption>
+                                {{ c.eerdere_plannen.img_caption_1 }}
+                            </figcaption>
                         </figure>
                         <figure class="section-figure">
                             <img
@@ -143,7 +195,9 @@
                                 alt="Krantenartikel: Massale steun voor aanleg voetgangerstunnel Leyduin"
                                 loading="lazy"
                             />
-                            <figcaption>{{ c.eerdere_plannen.img_caption_2 }}</figcaption>
+                            <figcaption>
+                                {{ c.eerdere_plannen.img_caption_2 }}
+                            </figcaption>
                         </figure>
                     </div>
 
@@ -168,7 +222,9 @@
                     <div class="card-grid">
                         {% for card in c.doel.cards %}
                         <article class="card">
-                            <div class="card-icon" aria-hidden="true">{{ card.icon }}</div>
+                            <div class="card-icon" aria-hidden="true">
+                                {{ card.icon }}
+                            </div>
                             <h3>{{ card.title }}</h3>
                             <p>{{ card.text }}</p>
                         </article>
@@ -365,7 +421,10 @@
                             var email = user + "@" + domain;
                             link.href = "mailto:" + email;
                             link.textContent = email;
-                            link.setAttribute("aria-label", "E-mail naar " + email);
+                            link.setAttribute(
+                                "aria-label",
+                                "E-mail naar " + email,
+                            );
                         }
                     });
             })();
