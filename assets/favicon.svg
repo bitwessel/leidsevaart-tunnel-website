@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🌿</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
+  <rect width="480" height="480" rx="100" fill="#2E7D32" />
+  
+  <path d="M 120 480 L 120 280 A 120 120 0 0 1 360 280 L 360 480" fill="#F1F8E9" />
+  
+  <path d="M 240 180 
+           C 240 180 160 240 160 310 
+           C 160 360 215 395 230 400 
+           L 230 430 
+           A 10 10 0 0 0 250 430 
+           L 250 400 
+           C 265 395 320 360 320 310 
+           C 320 240 240 180 240 180 Z" 
+        fill="#4CAF50" />
+</svg>
