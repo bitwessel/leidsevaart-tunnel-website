@@ -42,7 +42,7 @@
         <meta property="og:image:alt" content="Voetgangerstunnel Leyduin burgerinitiatief Heemstede" />
 
         <!-- Twitter -->
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta
             name="twitter:title"
             content="Voetgangerstunnel Leyduin – Burgerinitiatief Heemstede"
@@ -167,11 +167,24 @@
 
         <!-- Favicons -->
         <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any" />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="{{ '/favicon.svg' | relative_url }}"
-        />
+        <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}" />
+        <!-- Absolute URLs for Google Search -->
+        <link rel="icon" type="image/svg+xml" href="https://burgerinitiatief-leyduin.nl/favicon.svg" />
+        <link rel="shortcut icon" href="https://burgerinitiatief-leyduin.nl/favicon.ico" />
+
+        <!-- Image structured data for better indexing -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            "contentUrl": "https://burgerinitiatief-leyduin.nl/assets/hero-image.webp",
+            "url": "https://burgerinitiatief-leyduin.nl/assets/hero-image.webp",
+            "name": "Voetgangerstunnel Leyduin burgerinitiatief Heemstede",
+            "description": "Hero afbeelding van het burgerinitiatief voor een veilige voetgangerstunnel bij Leyduin in Heemstede",
+            "license": "https://burgerinitiatief-leyduin.nl/",
+            "acquireLicensePage": "https://burgerinitiatief-leyduin.nl/#contact"
+        }
+        </script>
 
         <link rel="stylesheet" href="{{ '/style.css' | relative_url }}" />
     </head>
