@@ -268,7 +268,7 @@ li {
 .hero-content {
     position: relative;
     z-index: 2;
-    flex: 0 0 500px;
+    flex: 0 0 560px;
     margin-left: -80px;
     padding: var(--space-lg) var(--space-lg) var(--space-lg) calc(var(--space-lg) + 20px);
     /* Slight transparency — image softly bleeds through */
@@ -571,6 +571,22 @@ li {
     justify-content: center;
     gap: 1.5rem;
   }
+  .logo-carousel-item[aria-hidden="true"] {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-carousel-track {
+    animation: none;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .logo-carousel-item[aria-hidden="true"] {
+    display: none;
+  }
 }
 
 .logo-carousel-item {
@@ -610,7 +626,13 @@ li {
 
 /* ---------- Political cards ---------- */
 .political-grid {
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 600px) {
+  .political-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .political-card {

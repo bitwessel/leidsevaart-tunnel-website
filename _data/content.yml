@@ -93,6 +93,14 @@ verkiezingen:
   para_4: Met het oog op de gemeenteraadsverkiezingen op 18 maart 2026 is het interessant de standpunten van de verschillende partijen na te gaan.
   parties_title: Politieke standpunten
   parties:
+    - name: Stemvergelijker Heemstede
+      url: https://www.stemvergelijker.nl/
+      logo: https://primary.jwwb.nl/public/r/o/o/temp-synyebxcnnbewzvrezfd/image-high-pjvw8q.png?enable-io=true&width=83
+      text: Vergelijk de standpunten van alle Heemsteedse partijen over de voetgangerstunnel en andere lokale thema's — handig als hulpmiddel bij uw stemkeuze op 18 maart.
+    - name: Politiek café Heemstede
+      url: https://www.facebook.com/groups/614886025348830/
+      logo: https://primary.jwwb.nl/public/r/o/o/temp-synyebxcnnbewzvrezfd/image-high-pjvw8q.png?enable-io=true&width=83
+      text: Ontmoetingsplek voor politiek geïnteresseerde Heemsteedenaren. Praat mee over lokale thema's zoals de voetgangerstunnel bij Leyduin.
     - name: GroenLinks-PvdA
       url: https://heemstede.groenlinks.nl/standpunten/verkeer-heemstede
       logo: https://upload.wikimedia.org/wikipedia/commons/7/7c/GroenLinks_logo_%28variant%29.svg
