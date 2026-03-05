@@ -397,12 +397,14 @@
                     <div class="card-grid political-grid">
                         {% for party in c.verkiezingen.parties %}
                         <article class="card political-card">
-                            <a href="{{ party.url }}" target="_blank" rel="noopener" class="party-card-link">
+                            <div class="party-card-header">
+                                <h4><a href="{{ party.url }}" target="_blank" rel="noopener" class="party-card-link">{{ party.name }}</a></h4>
                                 {% if party.logo %}
-                                <img src="{{ party.logo }}" alt="" class="party-logo" loading="lazy" />
+                                <a href="{{ party.url }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" class="party-logo-link">
+                                    <img src="{{ party.logo }}" alt="" class="party-logo" loading="lazy" />
+                                </a>
                                 {% endif %}
-                                <h4>{{ party.name }}</h4>
-                            </a>
+                            </div>
                             <p>{{ party.text }}</p>
                         </article>
                         {% endfor %}
