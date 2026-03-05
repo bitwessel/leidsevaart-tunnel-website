@@ -109,7 +109,7 @@
                             {
                                 "@type": "SiteNavigationElement",
                                 "position": 1,
-                                "name": "Toegang",
+                                "name": "Burgerinitiatief",
                                 "url": "https://burgerinitiatief-leyduin.nl/#toegang"
                             },
                             {
@@ -121,26 +121,26 @@
                             {
                                 "@type": "SiteNavigationElement",
                                 "position": 3,
-                                "name": "Eerdere plannen",
-                                "url": "https://burgerinitiatief-leyduin.nl/#eerdere-plannen"
-                            },
-                            {
-                                "@type": "SiteNavigationElement",
-                                "position": 4,
-                                "name": "Doel",
+                                "name": "Waarom een tunneltje?",
                                 "url": "https://burgerinitiatief-leyduin.nl/#doel"
                             },
                             {
                                 "@type": "SiteNavigationElement",
-                                "position": 5,
+                                "position": 4,
                                 "name": "Ondersteuning",
                                 "url": "https://burgerinitiatief-leyduin.nl/#ondersteuning"
                             },
                             {
                                 "@type": "SiteNavigationElement",
-                                "position": 6,
+                                "position": 5,
                                 "name": "Verkiezingen",
                                 "url": "https://burgerinitiatief-leyduin.nl/#verkiezingen"
+                            },
+                            {
+                                "@type": "SiteNavigationElement",
+                                "position": 6,
+                                "name": "Terugblik",
+                                "url": "https://burgerinitiatief-leyduin.nl/#eerdere-plannen"
                             },
                             {
                                 "@type": "SiteNavigationElement",
@@ -172,14 +172,9 @@
         />
 
         <!-- Favicons -->
-        <link rel="icon" type="image/svg+xml" href="https://burgerinitiatief-leyduin.nl/favicon.svg" />
-        <link rel="icon" type="image/png" href="https://burgerinitiatief-leyduin.nl/favicon-32x32.png" sizes="32x32" />
-        <link rel="icon" type="image/png" href="https://burgerinitiatief-leyduin.nl/favicon-16x16.png" sizes="16x16" />
-        <link rel="icon" href="https://burgerinitiatief-leyduin.nl/favicon.ico" sizes="any" />
-        <link rel="icon" type="image/png" href="https://burgerinitiatief-leyduin.nl/android-chrome-192x192.png" sizes="192x192" />
-        <link rel="icon" type="image/png" href="https://burgerinitiatief-leyduin.nl/android-chrome-512x512.png" sizes="512x512" />
-        <link rel="apple-touch-icon" href="https://burgerinitiatief-leyduin.nl/apple-touch-icon.png" sizes="180x180" />
-        <link rel="manifest" href="https://burgerinitiatief-leyduin.nl/site.webmanifest" />
+        <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}" />
+        <link rel="icon" href="{{ '/assets/favicon.ico' | relative_url }}" sizes="any" />
+        <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}" />
 
         <!-- Image structured data for better indexing -->
         <script type="application/ld+json">
@@ -215,9 +210,9 @@
                     <li><a href="#toegang">Burgerinitiatief</a></li>
                     <li><a href="#gevolgen">Gevolgen</a></li>
                     <li><a href="#doel">Waarom een tunneltje?</a></li>
-                    <li><a href="#eerdere-plannen">Terugblik</a></li>
                     <li><a href="#ondersteuning">Ondersteuning</a></li>
                     <li><a href="#verkiezingen">Verkiezingen</a></li>
+                    <li><a href="#eerdere-plannen">Terugblik</a></li>
                     <li><a href="#planning">Planning</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -319,45 +314,8 @@
                 </div>
             </section>
 
-            <!-- EERDERE PLANNEN VOOR EEN OPLOSSING -->
-            <section id="eerdere-plannen" class="section section-alt">
-                <div class="container">
-                    <h2>{{ c.eerdere_plannen.title }}</h2>
-
-                    <div class="two-col-figures">
-                        <figure class="section-figure">
-                            <img
-                                src="{{ '/assets/petitie-aanbieding-raad.webp' | relative_url }}"
-                                alt="Aanbieding van het burgerinitiatief met 1.678 handtekeningen aan de burgemeester"
-                                loading="lazy"
-                            />
-                            <figcaption>
-                                {{ c.eerdere_plannen.img_caption_1 }}
-                            </figcaption>
-                        </figure>
-                        <figure class="section-figure">
-                            <img
-                                src="{{ '/assets/krant-massale-steun.webp' | relative_url }}"
-                                alt="Krantenartikel: Massale steun voor aanleg voetgangerstunnel Leyduin"
-                                loading="lazy"
-                            />
-                            <figcaption>
-                                {{ c.eerdere_plannen.img_caption_2 }}
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <p>{{ c.eerdere_plannen.para_1 }}</p>
-                    <p>{{ c.eerdere_plannen.para_2 }}</p>
-                    <p>{{ c.eerdere_plannen.para_3 }}</p>
-                    <p>{{ c.eerdere_plannen.para_4 }}</p>
-                    <p>{{ c.eerdere_plannen.para_5 }}</p>
-                </div>
-            </section>
-
-
             <!-- ONDERSTEUNING -->
-            <section id="ondersteuning" class="section">
+            <section id="ondersteuning" class="section section-alt">
                 <div class="container">
                     <h2>{{ c.ondersteuning.title }}</h2>
                     <p>{{ c.ondersteuning.intro }}</p>
@@ -370,7 +328,7 @@
             </section>
 
             <!-- GEMEENTERAADSVERKIEZINGEN -->
-            <section id="verkiezingen" class="section section-alt">
+            <section id="verkiezingen" class="section">
                 <div class="container">
                     <h2>{{ c.verkiezingen.title }}</h2>
 
@@ -394,6 +352,41 @@
                         </article>
                         {% endfor %}
                     </div>
+                </div>
+            </section>
+
+            <!-- EERDERE PLANNEN VOOR EEN OPLOSSING -->
+            <section id="eerdere-plannen" class="section section-alt">
+                <div class="container">
+                    <h2>{{ c.eerdere_plannen.title }}</h2>
+
+                    <div class="two-col-figures">
+                        <figure class="section-figure">
+                            <img
+                                src="{{ '/assets/petitie-aanbieding-raad.webp' | relative_url }}"
+                                alt="Aanbieding van het burgerinitiatief met 1.678 handtekeningen aan de burgemeester"
+                                loading="lazy"                            />
+                            <figcaption>
+                                {{ c.eerdere_plannen.img_caption_1 }}
+                            </figcaption>
+                        </figure>
+                        <figure class="section-figure">
+                            <img
+                                src="{{ '/assets/krant-massale-steun.webp' | relative_url }}"
+                                alt="Krantenartikel: Massale steun voor aanleg voetgangerstunnel Leyduin"
+                                loading="lazy"
+                            />
+                            <figcaption>
+                                {{ c.eerdere_plannen.img_caption_2 }}
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <p>{{ c.eerdere_plannen.para_1 }}</p>
+                    <p>{{ c.eerdere_plannen.para_2 }}</p>
+                    <p>{{ c.eerdere_plannen.para_3 }}</p>
+                    <p>{{ c.eerdere_plannen.para_4 }}</p>
+                    <p>{{ c.eerdere_plannen.para_5 }}</p>
                 </div>
             </section>
 
