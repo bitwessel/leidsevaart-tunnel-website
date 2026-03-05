@@ -266,10 +266,7 @@
             <section id="gevolgen" class="section section-alt">
                 <div class="container">
                     <h2>{{ c.gevolgen.title }}</h2>
-                    <p class="emphasis-block">
-                        <strong>{{ c.gevolgen.emphasis }}</strong>
-                    </p>
-
+                    
                     <figure class="section-figure">
                         <img
                             src="{{ '/assets/smalle-en-drukke-manpadslaan.webp' | relative_url }}"
@@ -286,7 +283,11 @@
                         <li>{{ item }}</li>
                         {% endfor %}
                     </ul>
-
+                    
+                    <p class="emphasis-block">
+                        <strong>{{ c.gevolgen.emphasis }}</strong>
+                    </p>
+                    
                 </div>
             </section>
             
@@ -294,7 +295,7 @@
             <section id="doel" class="section">
                 <div class="container">
                     <h2>{{ c.doel.title }}</h2>
-
+                    
                     <p>{{ c.doel.para_1 }}</p>
                     <p>{{ c.doel.para_2 }}</p>
 
@@ -396,7 +397,12 @@
                     <div class="card-grid political-grid">
                         {% for party in c.verkiezingen.parties %}
                         <article class="card political-card">
-                            <h4>{{ party.name }}</h4>
+                            <a href="{{ party.url }}" target="_blank" rel="noopener" class="party-card-link">
+                                {% if party.logo %}
+                                <img src="{{ party.logo }}" alt="" class="party-logo" loading="lazy" />
+                                {% endif %}
+                                <h4>{{ party.name }}</h4>
+                            </a>
                             <p>{{ party.text }}</p>
                         </article>
                         {% endfor %}
