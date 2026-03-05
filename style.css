@@ -269,19 +269,7 @@ li {
     object-position: center;
 }
 
-/* Gradient fades: left edge and bottom blend into the background */
-.hero-image-wrap::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:
-        linear-gradient(to right, #152b1d 0%, transparent 16%),
-        linear-gradient(to left,  #2d5f3e 0%, transparent 12%),
-        linear-gradient(to bottom, transparent 60%, #152b1d 100%),
-        linear-gradient(to top, transparent 75%, #152b1d 100%);
-    z-index: 1;
-    pointer-events: none;
-}
+
 
 /* ---------- Hero: content panel (Option C — full-height sidebar) ---------- */
 .hero-content {
