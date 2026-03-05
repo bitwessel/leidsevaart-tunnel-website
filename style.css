@@ -563,6 +563,10 @@ li {
   animation-play-state: paused;
 }
 
+.logo-carousel-clone {
+  display: contents; /* transparent to flexbox on desktop */
+}
+
 @media (prefers-reduced-motion: reduce) {
   .logo-carousel-track {
     animation: none;
@@ -571,7 +575,7 @@ li {
     justify-content: center;
     gap: 1.5rem;
   }
-  .logo-carousel-item[aria-hidden="true"] {
+  .logo-carousel-clone {
     display: none;
   }
 }
@@ -584,7 +588,7 @@ li {
     justify-content: center;
     gap: 1.5rem;
   }
-  .logo-carousel-item[aria-hidden="true"] {
+  .logo-carousel-clone {
     display: none;
   }
 }
