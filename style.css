@@ -825,6 +825,46 @@ li {
       margin-top: 0.2em;
 }
 
+/* ---------- Leyduin photo gallery ---------- */
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.photo-gallery .section-figure {
+  margin: 0;
+}
+
+.photo-gallery .section-figure img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* ---------- Video embed ---------- */
+.video-embed {
+  margin: var(--space-md) 0;
+}
+
+.video-embed-inner {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.video-embed-inner iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: var(--radius-lg);
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
     background: var(--color-green-dark);
@@ -984,6 +1024,10 @@ li {
           grid-template-columns: 1fr;
         }
         .two-col-figures {
+          grid-template-columns: 1fr;
+        }
+
+        .photo-gallery {
           grid-template-columns: 1fr;
         }
     

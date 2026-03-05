@@ -133,24 +133,30 @@
                             {
                                 "@type": "SiteNavigationElement",
                                 "position": 5,
+                                "name": "Leyduin foto's",
+                                "url": "https://burgerinitiatief-leyduin.nl/#leyduin"
+                            },
+                            {
+                                "@type": "SiteNavigationElement",
+                                "position": 6,
                                 "name": "Verkiezingen",
                                 "url": "https://burgerinitiatief-leyduin.nl/#verkiezingen"
                             },
                             {
                                 "@type": "SiteNavigationElement",
-                                "position": 6,
+                                "position": 7,
                                 "name": "Terugblik",
                                 "url": "https://burgerinitiatief-leyduin.nl/#eerdere-plannen"
                             },
                             {
                                 "@type": "SiteNavigationElement",
-                                "position": 7,
+                                "position": 8,
                                 "name": "Planning",
                                 "url": "https://burgerinitiatief-leyduin.nl/#planning"
                             },
                             {
                                 "@type": "SiteNavigationElement",
-                                "position": 8,
+                                "position": 9,
                                 "name": "Contact",
                                 "url": "https://burgerinitiatief-leyduin.nl/#contact"
                             }
@@ -211,6 +217,7 @@
                     <li><a href="#gevolgen">Gevolgen</a></li>
                     <li><a href="#doel">Waarom een tunneltje?</a></li>
                     <li><a href="#ondersteuning">Ondersteuning</a></li>
+                    <li><a href="#leyduin">Leyduin foto's</a></li>
                     <li><a href="#verkiezingen">Verkiezingen</a></li>
                     <li><a href="#eerdere-plannen">Terugblik</a></li>
                     <li><a href="#planning">Planning</a></li>
@@ -382,6 +389,57 @@
                                 <img src="https://primary.jwwb.nl/public/r/o/o/temp-synyebxcnnbewzvrezfd/image-high-pjvw8q.png?enable-io=true&width=83" alt="" onerror="this.style.display='none'" />
                                 <span>Stemvergelijker Heemstede</span>
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BUITENPLAATS LEYDUIN FOTO'S -->
+            <section id="leyduin" class="section section-alt">
+                <div class="container">
+                    <h2>{{ c.leyduin_fotos.title }}</h2>
+                    <p>{{ c.leyduin_fotos.intro }}</p>
+
+                    <div class="photo-gallery" role="list" aria-label="Foto's van Buitenplaats Leyduin">
+                        <figure class="section-figure" role="listitem">
+                            <img
+                                src="{{ '/assets/Ree Leyduin.webp' | relative_url }}"
+                                alt="Ree in het duingebied van Buitenplaats Leyduin bij Heemstede"
+                                loading="lazy"
+                                width="800" height="600"
+                            />
+                            <figcaption>{{ c.leyduin_fotos.img_caption_ree }}</figcaption>
+                        </figure>
+                        <figure class="section-figure" role="listitem">
+                            <img
+                                src="{{ '/assets/De moestuin Leyduin.webp' | relative_url }}"
+                                alt="De moestuin van Buitenplaats Leyduin"
+                                loading="lazy"
+                                width="800" height="600"
+                            />
+                            <figcaption>{{ c.leyduin_fotos.img_caption_moestuin }}</figcaption>
+                        </figure>
+                        <figure class="section-figure" role="listitem">
+                            <img
+                                src="{{ '/assets/Vergezicht Leyduin.webp' | relative_url }}"
+                                alt="Vergezicht over het duinlandschap van Leyduin"
+                                loading="lazy"
+                                width="800" height="600"
+                            />
+                            <figcaption>{{ c.leyduin_fotos.img_caption_vergezicht }}</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="video-embed">
+                        <p>{{ c.leyduin_fotos.video_caption }}</p>
+                        <div class="video-embed-inner">
+                            <iframe
+                                src="https://www.youtube-nocookie.com/embed/UzNZbPNFmpU"
+                                title="{{ c.leyduin_fotos.video_title }}"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                                loading="lazy"
+                            ></iframe>
                         </div>
                     </div>
                 </div>
