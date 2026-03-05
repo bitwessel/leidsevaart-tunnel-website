@@ -1,15 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480">
-  <rect width="480" height="480" rx="100" fill="#2E7D32" />
-  
-  <path d="M 120 480 L 120 280 A 120 120 0 0 1 360 280 L 360 480" fill="#F1F8E9" />
-  
-  <path d="M 240 180 
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><style>
+    #light-icon {
+      display: inline;
+    }
+    #dark-icon {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #light-icon {
+        display: none;
+      }
+      #dark-icon {
+        display: inline;
+      }
+    }
+  </style><g id="light-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1145)"><rect width="1000" height="1000" fill="#2e7d32"></rect><g transform="matrix(2.0833333333333335,0,0,2.0833333333333335,-5.684341886080802e-14,-5.684341886080802e-14)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480"><rect width="480" height="480" rx="100" fill="#2E7D32"></rect><path d="M 120 480 L 120 280 A 120 120 0 0 1 360 280 L 360 480" fill="#F1F8E9"></path><path d="M 240 180 
            C 240 180 160 240 160 310 
            C 160 360 215 395 230 400 
            L 230 430 
            A 10 10 0 0 0 250 430 
            L 250 400 
            C 265 395 320 360 320 310 
-           C 320 240 240 180 240 180 Z" 
-        fill="#4CAF50" />
-</svg>
+           C 320 240 240 180 240 180 Z" fill="#4CAF50"></path></svg></g></g><defs><clipPath id="SvgjsClipPath1145"><rect width="1000" height="1000" x="0" y="0" rx="350" ry="350"></rect></clipPath></defs></svg></g><g id="dark-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1146)"><rect width="1000" height="1000" fill="#2e7d32"></rect><g transform="matrix(1.4583333333333333,0,0,1.4583333333333333,150,150)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" width="480" height="480"><rect width="480" height="480" rx="100" fill="#2E7D32"></rect><path d="M 120 480 L 120 280 A 120 120 0 0 1 360 280 L 360 480" fill="#F1F8E9"></path><path d="M 240 180 
+           C 240 180 160 240 160 310 
+           C 160 360 215 395 230 400 
+           L 230 430 
+           A 10 10 0 0 0 250 430 
+           L 250 400 
+           C 265 395 320 360 320 310 
+           C 320 240 240 180 240 180 Z" fill="#4CAF50"></path></svg></g></g><defs><clipPath id="SvgjsClipPath1146"><rect width="1000" height="1000" x="0" y="0" rx="350" ry="350"></rect></clipPath></defs></svg></g></svg>
