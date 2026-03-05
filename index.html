@@ -266,15 +266,25 @@
             <section id="gevolgen" class="section section-alt">
                 <div class="container">
                     <h2>{{ c.gevolgen.title }}</h2>
-                    
-                    <figure class="section-figure">
-                        <img
-                            src="{{ '/assets/smalle-en-drukke-manpadslaan.webp' | relative_url }}"
-                            alt="Bewoners verzetten zich tegen de komende afsluiting bij de spoorwegovergang Leyduin"
-                            loading="lazy"
-                        />
-                        <figcaption>{{ c.gevolgen.img_caption }}</figcaption>
-                    </figure>
+
+                    <div class="two-col-figures">
+                        <figure class="section-figure">
+                            <img
+                                src="{{ '/assets/smalle-en-drukke-manpadslaan.webp' | relative_url }}"
+                                alt="De smalle en drukke Manpadslaan, de huidige omleiding voor wandelaars naar Leyduin"
+                                loading="lazy"
+                            />
+                            <figcaption>{{ c.gevolgen.img_caption_manpad }}</figcaption>
+                        </figure>
+                        <figure class="section-figure">
+                            <img
+                                src="{{ '/assets/bord-verboden.webp' | relative_url }}"
+                                alt="Bord bij de gesloten onbewaakte spoorwegovergang NABO bij Leyduin"
+                                loading="lazy"
+                            />
+                            <figcaption>{{ c.gevolgen.img_caption_verboden }}</figcaption>
+                        </figure>
+                    </div>
 
                     <p>{{ c.gevolgen.intro }}</p>
 
