@@ -825,6 +825,29 @@ li {
       margin-top: 0.2em;
 }
 
+.sources-list {
+  padding-left: 1.2em;
+  margin-top: var(--space-xs);
+}
+
+.sources-list li {
+  margin-bottom: 0.4em;
+  font-size: 0.9rem;
+}
+
+.source-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  font-weight: 600;
+  color: var(--color-green-dark);
+}
+
+.source-link::after {
+  content: " ↗";
+  font-size: 0.85em;
+}
+
 /* ---------- Leyduin photo gallery ---------- */
 .photo-gallery {
   display: grid;
