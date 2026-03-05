@@ -475,7 +475,7 @@ li {
   margin-top: var(--space-md);
 }
 
-/* ---------- Support list ---------- */
+/* ---------- Support list / Logo carousel ---------- */
 .support-list {
   list-style: none;
   padding-left: 0;
@@ -493,6 +493,78 @@ li {
   font-weight: 600;
   color: var(--color-green-dark);
   box-shadow: var(--shadow-sm);
+}
+
+.logo-carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 1.5rem 0 0.5rem;
+  margin-top: var(--space-md);
+  /* subtle fade on both edges */
+  mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
+}
+
+@keyframes logo-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.logo-carousel-track {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: max-content;
+  animation: logo-scroll 24s linear infinite;
+}
+
+.logo-carousel-track:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-carousel-track {
+    animation: none;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+}
+
+.logo-carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--color-text-light);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-align: center;
+  flex: 0 0 200px;
+  min-height: 80px;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.logo-carousel-item:hover {
+  opacity: 0.75;
+  transform: translateY(-2px);
+}
+
+.logo-carousel-item img {
+  height: 52px;
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  border-radius: 6px;
+  filter: grayscale(25%);
+  transition: filter 0.2s;
+}
+
+.logo-carousel-item:hover img {
+  filter: grayscale(0%);
 }
 
 /* ---------- Political cards ---------- */
