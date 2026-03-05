@@ -154,7 +154,7 @@ li {
       padding: 0.75rem var(--space-md);
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       min-height: var(--nav-height);
     gap: var(--space-sm);
     flex-wrap: wrap;
@@ -229,58 +229,92 @@ li {
 /* ---------- Hero ---------- */
 .hero {
     position: relative;
-    min-height: 70vh;
-      display: flex;
-      align-items: flex-end;
-    justify-content: flex-end;
-    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
     margin-top: var(--nav-height);
-    background-color: var(--color-green-dark);
-      color: var(--color-text);
-      overflow: hidden;
+    /* Height: nearly full viewport, leaving ~90px so next section peeks below */
+    height: calc(100vh - var(--nav-height) - 90px);
+    min-height: 480px;
+    /* Match the background of the first section below so the bottom bleeds in */
+    background: var(--color-bg);
+    overflow: hidden;
 }
 
+/* Old ::before was the CSS background image — no longer needed */
 .hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("assets/hero-image.webp") center/cover no-repeat;
-  z-index: 0;
-}
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-      background: transparent;
-    z-index: 1;
+    content: none;
 }
 
+/* ---------- Hero: image area (left) ---------- */
+.hero-image-wrap {
+    flex: 1.3;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-bg-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Shift image up: clips the very top, shows more of the scene */
+    object-position: center 15%;
+}
+
+
+
+/* ---------- Hero: content panel ---------- */
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 540px;
-    padding: var(--space-lg) var(--space-md);
-    margin: 0 var(--space-lg) var(--space-lg) 0;
-    background: rgba(255, 250, 235, 0.95);
-    border-radius: var(--radius-lg);
-    border: 3px solid rgba(255, 200, 100, 0.6);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    flex: 0 0 500px;
+    margin-left: -80px;
+    padding: var(--space-lg) var(--space-lg) var(--space-lg) calc(var(--space-lg) + 20px);
+    /* Slight transparency — image softly bleeds through */
+    background: rgba(255, 255, 255, 0.91);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-left: 5px solid var(--color-green);
+    box-shadow: -8px 0 32px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+
+.hero-overlay {
+    display: none;
 }
 .hero h1 {
-    font-size: clamp(1.6rem, 4vw, 2.5rem);
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
     color: var(--color-green-dark);
     margin-bottom: var(--space-sm);
     font-weight: 700;
     text-shadow: none;
 }
 
+.hero-text {
+    width: 100%;
+}
+
 .hero-subtitle {
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: 1.6;
     opacity: 1;
     margin-bottom: var(--space-md);
-    font-weight: 650;
-    color: var(--color-text);
+    font-weight: 700;
+    color: var(--color-green-dark);
     text-shadow: none;
+}
+
+.hero-text p {
+    color: var(--color-text);
+    line-height: 1.75;
+}
+
+.hero-text strong {
+    font-weight: 700;
+    color: var(--color-green-dark);
 }
 
 .hero-actions {
@@ -316,8 +350,14 @@ li {
       color: var(--color-green-dark);
 }
 
+.hero .btn-primary {
+    background: var(--color-green);
+    color: var(--color-white);
+}
+
 .hero .btn-primary:hover {
-    background: var(--color-green-pale);
+    background: var(--color-green-dark);
+    color: var(--color-white);
 }
 
 .btn-secondary {
@@ -333,12 +373,14 @@ li {
     
     .hero .btn-secondary {
       color: var(--color-green-dark);
-      border-color: var(--color-green-dark);
+      border-color: var(--color-green);
+      background: transparent;
     }
     
     .hero .btn-secondary:hover {
       background: var(--color-green-pale);
       color: var(--color-green-dark);
+      border-color: var(--color-green-dark);
 }
 
 /* Buiten hero: groene knoppen */
@@ -443,6 +485,9 @@ li {
   background: var(--color-white);
   border-top: 1px solid var(--color-border);
   line-height: 1.5;
+  min-height: 3.6rem;
+  display: flex;
+  align-items: center;
 }
 
 /* Two-column figure layout */
@@ -451,19 +496,15 @@ li {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--space-md);
   margin-bottom: var(--space-md);
-  align-items: end;
+  align-items: start;
 }
 
-/* Make the newspaper image (second one) scrollable */
-.two-col-figures .section-figure:nth-child(2) {
-  max-height: 400px;
-}
-
-.two-col-figures .section-figure:nth-child(2) img {
-  max-height: none;
+/* Force equal-height images in two-col layouts */
+.two-col-figures .section-figure img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
   width: 100%;
   height: auto;
-  display: block;
 }
 
 /* ---------- Emphasis block ---------- */
@@ -825,6 +866,69 @@ li {
       margin-top: 0.2em;
 }
 
+.sources-list {
+  padding-left: 1.2em;
+  margin-top: var(--space-xs);
+}
+
+.sources-list li {
+  margin-bottom: 0.4em;
+  font-size: 0.9rem;
+}
+
+.source-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  font-weight: 600;
+  color: var(--color-green-dark);
+}
+
+.source-link::after {
+  content: " ↗";
+  font-size: 0.85em;
+}
+
+/* ---------- Leyduin photo gallery ---------- */
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.photo-gallery .section-figure {
+  margin: 0;
+}
+
+.photo-gallery .section-figure img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* ---------- Video embed ---------- */
+.video-embed {
+  margin: var(--space-md) 0;
+}
+
+.video-embed-inner {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.video-embed-inner iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: var(--radius-lg);
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
     background: var(--color-green-dark);
@@ -868,44 +972,17 @@ li {
    RESPONSIVE
    ============================================= */
 
-/* Medium screens: Side-by-side hero layout (Triggered at 1700px) */
-@media (max-width: 1700px) and (min-width: 769px) {
-  .hero {
-    flex-direction: row;
-    align-items: stretch;
-    min-height: auto;
-  }
-
-  .hero::before {
-    position: relative;
-    flex: 1.2;
-    min-height: 500px;
-  }
-
-  .hero-content {
-    flex: 1;
-    margin: 0;
-    padding: var(--space-xl) var(--space-md);
-    background: #fffdf5;
-    /* Non-transparent light background */
-    border-radius: 0;
-    border: none;
-    border-left: 1px solid var(--color-border);
-    box-shadow: none;
-    display: flex;
-    align-items: center;
-  }
-
-  .hero-text {
-    max-width: 100%;
-  }
-}
+/* Medium screens — side-by-side is now the permanent default; this block removed */
 
 /* Tablet & kleiner: Stacked layout */
 @media (max-width: 768px) {
     :root {
         --nav-height: 56px;
       }
+
+        .nav-inner {
+          justify-content: space-between;
+        }
 
         .nav-toggle {
           display: flex;
@@ -941,28 +1018,36 @@ li {
 
         .hero {
           flex-direction: column;
-            min-height: auto;
-            align-items: stretch;
-            justify-content: flex-start;
-          }
-          
-          .hero::before {
-            position: relative;
-            height: 350px;
-            width: 100%;
-            flex: none;
-          }
-          
-          .hero-content {
-            width: 100%;
-            max-width: none;
-            margin: 0;
-            padding: var(--space-lg) var(--space-md);
-            background: #fffdf5;
-            border-radius: 0;
-            border: none;
-            box-shadow: none;
-            text-align: left;
+          min-height: auto;
+          align-items: stretch;
+        }
+
+        .hero {
+          height: auto;
+          min-height: auto;
+        }
+
+        .hero-image-wrap {
+          min-height: 280px;
+          flex: none;
+        }
+
+        .hero-bg-img {
+          object-fit: cover;
+          object-position: center 15%;
+        }
+
+        .hero-content {
+          flex: none;
+          width: 100%;
+          margin-left: 0;
+          padding: var(--space-lg) var(--space-md);
+          background: rgba(255, 255, 255, 0.96);
+          backdrop-filter: none;
+          -webkit-backdrop-filter: none;
+          border-left: none;
+          border-top: 5px solid var(--color-green);
+          box-shadow: none;
         }
 
         .hero h1 {
@@ -986,6 +1071,10 @@ li {
         .two-col-figures {
           grid-template-columns: 1fr;
         }
+
+        .photo-gallery {
+          grid-template-columns: 1fr;
+        }
     
         .support-list {
           flex-direction: column;
@@ -994,8 +1083,8 @@ li {
 
 /* Klein mobiel */
 @media (max-width: 480px) {
-    .hero::before {
-        height: 250px;
+    .hero-image-wrap {
+        min-height: 240px;
       }
 
         .hero-content {
