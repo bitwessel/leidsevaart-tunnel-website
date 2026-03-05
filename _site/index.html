@@ -39,7 +39,7 @@
         <meta property="og:image:alt" content="Voetgangerstunnel Leyduin burgerinitiatief Heemstede" />
 
         <!-- Twitter -->
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta
             name="twitter:title"
             content="Voetgangerstunnel Leyduin – Burgerinitiatief Heemstede"
@@ -59,6 +59,12 @@
                         "@type": "Organization",
                         "name": "Burgerinitiatief Leyduin",
                         "url": "https://burgerinitiatief-leyduin.nl/",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": "https://burgerinitiatief-leyduin.nl/android-chrome-512x512.png",
+                            "width": 512,
+                            "height": 512
+                        },
                         "description": "Burgerinitiatief voor een veilige voetgangerstunnel bij Leyduin in Heemstede.",
                         "areaServed": "Heemstede",
                         "inLanguage": "nl-NL"
@@ -163,12 +169,28 @@
         />
 
         <!-- Favicons -->
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="/favicon.svg"
-        />
+        <link rel="icon" type="image/svg+xml" href="https://burgerinitiatief-leyduin.nl/favicon.svg" />
+        <link rel="icon" type="image/png" href="https://burgerinitiatief-leyduin.nl/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="https://burgerinitiatief-leyduin.nl/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" href="https://burgerinitiatief-leyduin.nl/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" href="https://burgerinitiatief-leyduin.nl/android-chrome-192x192.png" sizes="192x192" />
+        <link rel="icon" type="image/png" href="https://burgerinitiatief-leyduin.nl/android-chrome-512x512.png" sizes="512x512" />
+        <link rel="apple-touch-icon" href="https://burgerinitiatief-leyduin.nl/apple-touch-icon.png" sizes="180x180" />
+        <link rel="manifest" href="https://burgerinitiatief-leyduin.nl/site.webmanifest" />
+
+        <!-- Image structured data for better indexing -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            "contentUrl": "https://burgerinitiatief-leyduin.nl/assets/hero-image.webp",
+            "url": "https://burgerinitiatief-leyduin.nl/assets/hero-image.webp",
+            "name": "Voetgangerstunnel Leyduin burgerinitiatief Heemstede",
+            "description": "Hero afbeelding van het burgerinitiatief voor een veilige voetgangerstunnel bij Leyduin in Heemstede",
+            "license": "https://burgerinitiatief-leyduin.nl/",
+            "acquireLicensePage": "https://burgerinitiatief-leyduin.nl/#contact"
+        }
+        </script>
 
         <link rel="stylesheet" href="/style.css" />
     </head>
@@ -187,10 +209,10 @@
                     <span></span><span></span><span></span>
                 </button>
                 <ul class="nav-links">
-                    <li><a href="#toegang">Toegang</a></li>
+                    <li><a href="#toegang">Burgerinitiatief</a></li>
                     <li><a href="#gevolgen">Gevolgen</a></li>
-                    <li><a href="#eerdere-plannen">Eerdere plannen</a></li>
-                    <li><a href="#doel">Doel</a></li>
+                    <li><a href="#doel">Waarom een tunneltje?</a></li>
+                    <li><a href="#eerdere-plannen">Terugblik</a></li>
                     <li><a href="#ondersteuning">Ondersteuning</a></li>
                     <li><a href="#verkiezingen">Verkiezingen</a></li>
                     <li><a href="#planning">Planning</a></li>
@@ -206,11 +228,13 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Burgerinitiatief Leyduin</h1>
-                    <p class="hero-subtitle">Herstel de directe veilige verbinding voor wandelaars tussen Heemstede en Buitenplaats Leyduin!</p>
-                    <p>Met het eerste Burgerinitiatief Leyduin pleiten inwoners van Heemstede voor de realisatie van een voetgangerstunnel (met fietsgoot) onder het spoor. Zo hebben de wandelaars weer een veilige en directe route en toegang tot het natuurgebied.</p>
-                    <p>Bent u ook voor een voetgangerstunnel naar Leyduin? Het Burgerinitiatief zal na de Gemeenteraadsverkiezingen op 18 maart a.s. behandeld worden door de Gemeenteraad in Heemstede.</p>
-                    <p>Grijp uw kans dus om uw stem te laten horen bij deze verkiezingen! Bent u vóór het tunneltje?
-Alle politieke partijen in Heemstede hebben het Burgerinitiatief gesteund maar met name CDA en GroenLinks-PvdA maken zich ook in hun verkiezingsprogramma sterk voor de tunnel!</p>
+                    <p class="hero-subtitle">Kies voor een veilige verbinding voor wandelaars tussen Heemstede en Buitenplaats Leyduin!</p>
+                    <p>Het eerste Burgerinitiatief Leyduin voor de realisatie van een voetgangerstunnel (met fietsgoot) onder het spoor wordt in 2026 door de gemeenteraad besproken. 
+
+Een tunnel geeft wandelaars een veilige en directe route en toegang tot het prachtige natuurgebied Leyduin voor een gezond "ommetje".</p>
+                    <p>Wilt u ook een veilige en directe wandelroute via een voetgangerstunnel naar Leyduin? 
+Op 18 maart a.s. zijn de gemeenteraadsverkiezingen dus maak met uw stem het verschil!</p>
+                    <p>Alle politieke partijen in Heemstede hebben het Burgerinitiatief gesteund maar met name CDA en GroenLinks-PvdA maken zich ook in hun verkiezingsprogramma sterk voor de tunnel!</p>
                     <div class="hero-actions">
                         <a href="#doel" class="btn btn-primary"
                             >Waarom een tunneltje?</a
@@ -227,7 +251,7 @@ Alle politieke partijen in Heemstede hebben het Burgerinitiatief gesteund maar m
             <!-- TOEGANG TOT BUITENPLAATS LEYDUIN -->
             <section id="toegang" class="section">
                 <div class="container">
-                    <h2>Toegang tot Buitenplaats Leyduin</h2>
+                    <h2>Doel van het Burgerinitiatief</h2>
 
                     <figure class="section-figure">
                         <img
@@ -235,11 +259,13 @@ Alle politieke partijen in Heemstede hebben het Burgerinitiatief gesteund maar m
                             alt="Protestbord bij de overgang: Deze overgang dreigt te sluiten na meer dan 180 jaar zonder alternatief"
                             loading="lazy"
                         />
-                        <figcaption>De onbewaakte overgang bij Leyduin dreigde te sluiten na meer dan 180 jaar — zonder alternatief.</figcaption>
+                        <figcaption>Bewoners verzetten zich tegen de komende afsluiting, een zonder alternatief. Foto United Photos/Toussaint Kluiters</figcaption>
                     </figure>
 
-                    <p>De onbewaakte spoorwegovergang bij het Laantje van Leyduin was jarenlang een geliefde wandel- en fietsverbinding tussen de Leidsevaartweg in Heemstede en Buitenplaats Leyduin. Voor veel inwoners was dit de toegang tot een gezond ommetje in de natuur.</p>
-                    <p>In het kader van een landelijk veiligheidsprogramma sluit ProRail onbewaakte spoorwegovergangen (NABO's). De overgang bij Leyduin werd definitief afgesloten op 29 maart 2024 door ProRail. 
+                    <p>Met het Burgerinitiatief Leyduin verzoeken de indieners de gemeenteraad van Heemstede na te gaan of de realisatie van een eenvoudige voetgangerstunnel (met fietsgoot) onder het spoor bij Leyduin mogelijk is ter vervanging van de inmiddels afgesloten Niet Actief Beveiligde Overweg (NABO).
+
+Het doel is een veilige, toegankelijke onderdoorgang te realiseren die de verbinding met Leyduin vanaf de Leidsevaart herstelt voor het gezonde en veilige "ommetje" van de vele wandelaars.</p>
+                    <p>In het kader van een landelijk veiligheidsprogramma sloot ProRail de onbewaakte spoorwegovergang (NABO) bij Leyduin definitief op 29 maart 2024. 
 
 Sindsdien ontbreekt een veilige en directe toegang voor wandelaars tot Leyduin en het achterliggende duingebied. Met een tunneltje kan deze toegang weer hersteld worden.
 
@@ -251,14 +277,17 @@ Het Burgerinitiatief om dit tunneltje op de agenda van de Gemeenteraad te plaats
             <section id="gevolgen" class="section section-alt">
                 <div class="container">
                     <h2>Gevolgen van de sluiting</h2>
+                    <p class="emphasis-block">
+                        <strong>Kortom: de huidige situatie is onveilig, onpraktisch en ontmoedigt recreatief gebruik van het gebied door wandelaars.</strong>
+                    </p>
 
                     <figure class="section-figure">
                         <img
-                            src="/assets/bewoners-protest-spoor.webp"
+                            src="/assets/smalle-en-drukke-manpadslaan.webp"
                             alt="Bewoners verzetten zich tegen de komende afsluiting bij de spoorwegovergang Leyduin"
                             loading="lazy"
                         />
-                        <figcaption>Bewoners verzetten zich tegen de komende afsluiting, een zonder alternatief. Foto United Photos/Toussaint Kluiters</figcaption>
+                        <figcaption>Links: de smalle en drukke Manpadslaan en foto rechts: Bord sluiting NABO</figcaption>
                     </figure>
 
                     <p>Sinds de afsluiting zijn bezoekers van Buitenplaats Leyduin aangewezen op de bewaakte spoorwegovergang bij de Manpadslaan. Dit leidt tot meerdere problemen:</p>
@@ -277,58 +306,18 @@ Het Burgerinitiatief om dit tunneltje op de agenda van de Gemeenteraad te plaats
                         
                     </ul>
 
-                    <p class="emphasis-block">
-                        <strong>Kortom: de huidige situatie is onveilig, onpraktisch en ontmoedigt recreatief gebruik van het gebied door wandelaars.</strong>
-                    </p>
                 </div>
             </section>
-
-            <!-- EERDERE PLANNEN VOOR EEN OPLOSSING -->
-            <section id="eerdere-plannen" class="section">
-                <div class="container">
-                    <h2>Eerdere plannen voor een oplossing</h2>
-
-                    <div class="two-col-figures">
-                        <figure class="section-figure">
-                            <img
-                                src="/assets/petitie-aanbieding-raad.webp"
-                                alt="Aanbieding van het burgerinitiatief met 1.678 handtekeningen aan de burgemeester"
-                                loading="lazy"
-                            />
-                            <figcaption>
-                                Aanbieding van het burgerinitiatief met 1.678 handtekeningen aan de burgemeester.
-                            </figcaption>
-                        </figure>
-                        <figure class="section-figure">
-                            <img
-                                src="/assets/krant-massale-steun.webp"
-                                alt="Krantenartikel: Massale steun voor aanleg voetgangerstunnel Leyduin"
-                                loading="lazy"
-                            />
-                            <figcaption>
-                                Massale steun voor aanleg voetgangerstunnel Leyduin — Haarlems Dagblad.
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <p>Een aantal jaar vóór de sluiting is al gezocht naar een veilig alternatief. In maart 2022 werd een intentieovereenkomst tussen de gemeente Heemstede en ProRail getekend om een voetgangerstunnel met fietsgoot te bouwen, gesitueerd op het weiland links van het voormalige pompstation langs de Leidsevaartweg.</p>
-                    <p>De bouw van een tunnel is echter nooit gestart. Sommige politieke partijen wilden alleen instemmen met een volwaardige fietstunnel met hellingen voor fietsers en rolstoelrijders. Dit plan bleek financieel onaantrekkelijk en verdween vervolgens van de agenda zonder bespreking van de alternatieve uitvoeringen zoals de voetgangerstunnel met fietsgoot.</p>
-                    <p>Toen de overgang definitief werd gesloten en de tunneloptie was geschrapt, is een actiegroep opgericht om hier opnieuw aandacht voor te vragen. 
-De voetgangerstunnel met fietsgoot is volgens ons - en de vele mensen die ons steun hebben gegeven bij het Burgerinitiatief - de beste oplossing  voor een veilige doorgang naar Leyduin.</p>
-                    <p>Vanuit de Gemeente zijn geen alternatieven of voorzieningen geboden voor een veilige wandelroute naar en toegang tot Leyduin. De wandelaars die een "ommetje" willen maken, blijven weg.  Andere bezoekers van de Buitenplaats Leyduin zijn aangewezen op fiets of auto dan wel het lopen van de extra kilometers naar de spoorwegovergang bij Manpadslaan.</p>
-                    <p>Dit moet anders kunnen! Het Burgerinitiatief bood de mogelijkheid om de tunneloptie opnieuw op de agenda van de Gemeenteraad te krijgen. Toen we merkten dat er veel steun was hiervoor, haalden we binnen korte tijd 1.700 handtekeningen en daarnaast nog vele steunbetuigingen van Heemsteedse inwoners op. Dit was ruim voldoende om het eerste Burgerinitiatief in deze gemeente in te dienen. Het initiatief is in april 2025 aangeboden en staat nu op de agenda van de Gemeenteraad die de haalbaarheid en financiering van de tunneloptie zal onderzoeken.</p>
-                </div>
-            </section>
-
+            
             <!-- DOEL VAN HET BURGERINITIATIEF -->
-            <section id="doel" class="section section-alt">
+            <section id="doel" class="section">
                 <div class="container">
-                    <h2>Doel van het Burgerinitiatief</h2>
+                    <h2>Waarom een tunneltje?</h2>
 
-                    <p>Met het Burgerinitiatief Leyduin verzoeken de indieners de Gemeenteraad van Heemstede om die besluiten te nemen die de realisatie van een eenvoudige voetgangerstunnel (met fietsgoot) onder het spoor bij Leyduin mogelijk maken. Dit ter vervanging van de inmiddels afgesloten Niet Actief Beveiligde Overweg (NABO).</p>
-                    <p>Het doel is een veilige, toegankelijke onderdoorgang te realiseren die de verbinding met Leyduin herstelt voor het gezonde en veilige "ommetje".</p>
+                    <p></p>
+                    <p></p>
 
-                    <h3>Waarom een tunneltje?</h3>
+                    <h3></h3>
 
                     <div class="card-grid">
                         
@@ -367,6 +356,44 @@ De voetgangerstunnel met fietsgoot is volgens ons - en de vele mensen die ons st
                     </div>
                 </div>
             </section>
+
+            <!-- EERDERE PLANNEN VOOR EEN OPLOSSING -->
+            <section id="eerdere-plannen" class="section section-alt">
+                <div class="container">
+                    <h2>Terugblik</h2>
+
+                    <div class="two-col-figures">
+                        <figure class="section-figure">
+                            <img
+                                src="/assets/petitie-aanbieding-raad.webp"
+                                alt="Aanbieding van het burgerinitiatief met 1.678 handtekeningen aan de burgemeester"
+                                loading="lazy"
+                            />
+                            <figcaption>
+                                Aanbieding van het burgerinitiatief met 1.678 handtekeningen aan de burgemeester.
+                            </figcaption>
+                        </figure>
+                        <figure class="section-figure">
+                            <img
+                                src="/assets/krant-massale-steun.webp"
+                                alt="Krantenartikel: Massale steun voor aanleg voetgangerstunnel Leyduin"
+                                loading="lazy"
+                            />
+                            <figcaption>
+                                Massale steun voor aanleg voetgangerstunnel Leyduin — Haarlems Dagblad.
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <p>Een aantal jaar vóór de sluiting is al gezocht naar een veilig alternatief. In maart 2022 werd een intentieovereenkomst tussen de gemeente Heemstede en ProRail getekend om een voetgangerstunnel met fietsgoot te bouwen, gesitueerd op het weiland links van het voormalige pompstation langs de Leidsevaartweg.</p>
+                    <p>De bouw van een tunnel is echter nooit gestart. Sommige politieke partijen wilden alleen instemmen met een volwaardige fietstunnel met hellingen voor fietsers en rolstoelrijders. Dit plan bleek financieel onaantrekkelijk en verdween vervolgens van de agenda zonder bespreking van de alternatieve uitvoeringen zoals de voetgangerstunnel met fietsgoot.</p>
+                    <p>Toen de overgang definitief werd gesloten en de tunneloptie was geschrapt, is een actiegroep opgericht om hier opnieuw aandacht voor te vragen. 
+De voetgangerstunnel met fietsgoot is volgens ons - en de vele mensen die ons steun hebben gegeven bij het Burgerinitiatief - de beste oplossing  voor een veilige doorgang naar Leyduin.</p>
+                    <p>Vanuit de Gemeente zijn geen alternatieven of voorzieningen geboden voor een veilige wandelroute naar en toegang tot Leyduin. De wandelaars die een "ommetje" willen maken, blijven weg.  Andere bezoekers van de Buitenplaats Leyduin zijn aangewezen op fiets of auto dan wel het lopen van de extra kilometers naar de spoorwegovergang bij Manpadslaan.</p>
+                    <p>Dit moet anders kunnen! Het Burgerinitiatief bood de mogelijkheid om de tunneloptie opnieuw op de agenda van de Gemeenteraad te krijgen. Toen we merkten dat er veel steun was hiervoor, haalden we binnen korte tijd 1.700 handtekeningen en daarnaast nog vele steunbetuigingen van Heemsteedse inwoners op. Dit was ruim voldoende om het eerste Burgerinitiatief in deze gemeente in te dienen. Het initiatief is in april 2025 aangeboden en staat nu op de agenda van de Gemeenteraad die de haalbaarheid en financiering van de tunneloptie zal onderzoeken.</p>
+                </div>
+            </section>
+
 
             <!-- ONDERSTEUNING -->
             <section id="ondersteuning" class="section">
@@ -428,8 +455,8 @@ De voetgangerstunnel met fietsgoot is volgens ons - en de vele mensen die ons st
             <section id="planning" class="section">
                 <div class="container">
                     <h2>Planning en voortgang</h2>
-                    <p>De gewenste einddatum voor afronding van de onderzoeken en verdere uitwerking door de gemeenteraad was oorspronkelijk december 2025.</p>
-                    <p>In de begrotingswijzigingen voor 2026 wordt de financiële doorwerking van diverse projecten verder verwerkt.</p>
+                    <p>De gewenste einddatum voor afronding van de onderzoeken en verdere uitwerking door de gemeenteraad, zoals verzocht in het Burgerinitiatief, staat gepland voor 2026.</p>
+                    <p>De gemeenteraadsverkiezingen bieden u de kans om het Burgerinitiatief te steunen!</p>
                 </div>
             </section>
 
@@ -437,7 +464,7 @@ De voetgangerstunnel met fietsgoot is volgens ons - en de vele mensen die ons st
             <section id="op-de-hoogte" class="section section-cta">
                 <div class="container">
                     <h2>Blijf op de hoogte</h2>
-                    <p>Via deze website willen we alle mensen die het Burgerinitiatief gesteund hebben bedanken en informeren. Hier delen we informatie en houden we u op de hoogte van de stand van zaken.</p>
+                    <p>Via deze website willen we alle mensen die het Burgerinitiatief gesteund hebben bedanken en op de hoogte houden. Hier delen we informatie over de laatste ontwikkelingen.</p>
                     <p>
                         Voor vragen en suggesties:<br />
                         <strong>

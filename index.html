@@ -212,10 +212,10 @@
                     <span></span><span></span><span></span>
                 </button>
                 <ul class="nav-links">
-                    <li><a href="#toegang">Toegang</a></li>
+                    <li><a href="#toegang">Burgerinitiatief</a></li>
                     <li><a href="#gevolgen">Gevolgen</a></li>
-                    <li><a href="#eerdere-plannen">Eerdere plannen</a></li>
-                    <li><a href="#doel">Doel</a></li>
+                    <li><a href="#doel">Waarom een tunneltje?</a></li>
+                    <li><a href="#eerdere-plannen">Terugblik</a></li>
                     <li><a href="#ondersteuning">Ondersteuning</a></li>
                     <li><a href="#verkiezingen">Verkiezingen</a></li>
                     <li><a href="#planning">Planning</a></li>
@@ -271,10 +271,13 @@
             <section id="gevolgen" class="section section-alt">
                 <div class="container">
                     <h2>{{ c.gevolgen.title }}</h2>
+                    <p class="emphasis-block">
+                        <strong>{{ c.gevolgen.emphasis }}</strong>
+                    </p>
 
                     <figure class="section-figure">
                         <img
-                            src="{{ '/assets/bewoners-protest-spoor.webp' | relative_url }}"
+                            src="{{ '/assets/smalle-en-drukke-manpadslaan.webp' | relative_url }}"
                             alt="Bewoners verzetten zich tegen de komende afsluiting bij de spoorwegovergang Leyduin"
                             loading="lazy"
                         />
@@ -289,14 +292,35 @@
                         {% endfor %}
                     </ul>
 
-                    <p class="emphasis-block">
-                        <strong>{{ c.gevolgen.emphasis }}</strong>
-                    </p>
+                </div>
+            </section>
+            
+            <!-- DOEL VAN HET BURGERINITIATIEF -->
+            <section id="doel" class="section">
+                <div class="container">
+                    <h2>{{ c.doel.title }}</h2>
+
+                    <p>{{ c.doel.para_1 }}</p>
+                    <p>{{ c.doel.para_2 }}</p>
+
+                    <h3>{{ c.doel.cards_title }}</h3>
+
+                    <div class="card-grid">
+                        {% for card in c.doel.cards %}
+                        <article class="card">
+                            <div class="card-icon" aria-hidden="true">
+                                {{ card.icon }}
+                            </div>
+                            <h3>{{ card.title }}</h3>
+                            <p>{{ card.text }}</p>
+                        </article>
+                        {% endfor %}
+                    </div>
                 </div>
             </section>
 
             <!-- EERDERE PLANNEN VOOR EEN OPLOSSING -->
-            <section id="eerdere-plannen" class="section">
+            <section id="eerdere-plannen" class="section section-alt">
                 <div class="container">
                     <h2>{{ c.eerdere_plannen.title }}</h2>
 
@@ -331,29 +355,6 @@
                 </div>
             </section>
 
-            <!-- DOEL VAN HET BURGERINITIATIEF -->
-            <section id="doel" class="section section-alt">
-                <div class="container">
-                    <h2>{{ c.doel.title }}</h2>
-
-                    <p>{{ c.doel.para_1 }}</p>
-                    <p>{{ c.doel.para_2 }}</p>
-
-                    <h3>{{ c.doel.cards_title }}</h3>
-
-                    <div class="card-grid">
-                        {% for card in c.doel.cards %}
-                        <article class="card">
-                            <div class="card-icon" aria-hidden="true">
-                                {{ card.icon }}
-                            </div>
-                            <h3>{{ card.title }}</h3>
-                            <p>{{ card.text }}</p>
-                        </article>
-                        {% endfor %}
-                    </div>
-                </div>
-            </section>
 
             <!-- ONDERSTEUNING -->
             <section id="ondersteuning" class="section">
