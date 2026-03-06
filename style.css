@@ -865,6 +865,178 @@ li {
       font-size: 0.95rem;
 }
 
+.qr-code {
+  display: block;
+  border-radius: var(--radius);
+  max-width: 160px;
+  height: auto;
+}
+
+/* ---------- Share buttons ---------- */
+.share-btn-native {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  width: 100%;
+  justify-content: center;
+  padding: 0.65em 1.2em;
+  margin-bottom: var(--space-sm);
+  border: none;
+  border-radius: var(--radius);
+  background: var(--color-green-dark);
+  color: #fff;
+  font-size: 1rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.share-btn-native:hover {
+  background: var(--color-green);
+  transform: translateY(-1px);
+}
+
+.share-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.55em 1em;
+  border-radius: var(--radius);
+  border: none;
+  font-size: 0.9rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+  white-space: nowrap;
+}
+
+.share-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.share-btn-whatsapp {
+  background: #25D366;
+}
+
+.share-btn-facebook {
+  background: #1877F2;
+}
+
+.share-btn-email {
+  background: #555;
+}
+
+.qr-wrap {
+  margin-top: var(--space-sm);
+}
+
+.qr-label {
+  font-size: 0.8rem;
+  color: var(--color-text-muted, #666);
+  margin-top: 0.3em;
+}
+
+/* ---------- Floating share button ---------- */
+.float-share {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.float-share-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background: var(--color-green-dark);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.75em 1.25em;
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  transition: background 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+
+.float-share-btn:hover {
+  background: var(--color-green);
+  transform: translateY(-2px);
+}
+
+.float-share-panel {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 170px;
+}
+
+.float-share-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.55em 0.85em;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.float-share-link:hover {
+  opacity: 0.88;
+}
+
+.float-share-whatsapp {
+  background: #25D366;
+}
+
+.float-share-facebook {
+  background: #1877F2;
+}
+
+.float-share-email {
+  background: #555;
+  color: #fff;
+}
+
+/* Mobile: icon-only circle */
+@media (max-width: 600px) {
+  .float-share-label {
+    display: none;
+  }
+
+  .float-share-btn {
+    border-radius: 50%;
+    padding: 0.85em;
+  }
+}
 /* ---------- Bronnenlijst ---------- */
 .source-list {
     list-style: none;
@@ -1000,6 +1172,38 @@ li {
 
 /* Medium screens — side-by-side is now the permanent default; this block removed */
 
+/* Below 1780px: stack hero so the image is always fully visible */
+@media (max-width: 1780px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    min-height: auto;
+  }
+
+  .hero-image-wrap {
+    min-height: 380px;
+    flex: none;
+    width: 100%;
+  }
+
+  .hero-bg-img {
+    object-fit: cover;
+    object-position: center 15%;
+  }
+
+  .hero-content {
+    flex: none;
+    width: 100%;
+    margin-left: 0;
+    padding: var(--space-lg) var(--space-md);
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-left: none;
+    border-top: 5px solid var(--color-green);
+    box-shadow: none;
+  }
+}
 /* Tablet & kleiner: Stacked layout */
 @media (max-width: 768px) {
     :root {
