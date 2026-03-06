@@ -984,46 +984,16 @@ li {
   transform: translateY(-2px);
 }
 
-.float-share-panel {
-  background: #fff;
-  border-radius: var(--radius);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
-  padding: 0.6rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  min-width: 170px;
-}
-
-.float-share-link {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-  padding: 0.55em 0.85em;
-  border-radius: var(--radius);
-  font-size: 0.9rem;
+.float-share-toast {
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-size: 0.875rem;
   font-family: var(--font-body);
   font-weight: 600;
-  color: #fff;
-  text-decoration: none;
-  transition: opacity 0.15s;
-}
-
-.float-share-link:hover {
-  opacity: 0.88;
-}
-
-.float-share-whatsapp {
-  background: #25D366;
-}
-
-.float-share-facebook {
-  background: #1877F2;
-}
-
-.float-share-email {
-  background: #555;
-  color: #fff;
+  padding: 0.45em 0.9em;
+  border-radius: 2rem;
+  pointer-events: none;
+  white-space: nowrap;
 }
 
 /* Mobile: icon-only circle */
