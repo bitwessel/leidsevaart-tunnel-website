@@ -257,15 +257,6 @@
                 <div class="container">
                     <h2>{{ c.toegang.title }}</h2>
 
-                    <figure class="section-figure">
-                        <img
-                            src="{{ '/assets/bord-sluiting-overgang.webp' | relative_url }}"
-                            alt="Protestbord bij de overgang: Deze overgang dreigt te sluiten na meer dan 180 jaar zonder alternatief"
-                            loading="lazy"
-                        />
-                        <figcaption>{{ c.toegang.img_caption }}</figcaption>
-                    </figure>
-
                     <p>{{ c.toegang.para_1 }}</p>
                     <p>{{ c.toegang.para_2 }}</p>
                 </div>
@@ -473,29 +464,17 @@
                 <div class="container">
                     <h2>{{ c.eerdere_plannen.title }}</h2>
 
-                    <div class="two-col-figures">
-                        <figure class="section-figure">
-                            <img
-                                src="{{ '/assets/petitie-aanbieding-raad.webp' | relative_url }}"
-                                alt="Aanbieding van het burgerinitiatief met 1.678 handtekeningen aan de burgemeester"
-                                loading="lazy"                            />
-                            <figcaption>
-                                {{ c.eerdere_plannen.img_caption_1 }}
-                            </figcaption>
-                        </figure>
-                        <figure class="section-figure">
-                            <img
-                                src="{{ '/assets/krant-massale-steun.webp' | relative_url }}"
-                                alt="Krantenartikel: Massale steun voor aanleg voetgangerstunnel Leyduin"
-                                loading="lazy"
-                            />
-                            <figcaption>
-                                {{ c.eerdere_plannen.img_caption_2 }}
-                            </figcaption>
-                        </figure>
-                    </div>
+                    <figure class="section-figure">
+                        <img
+                            src="{{ '/assets/bord-sluiting-overgang.webp' | relative_url }}"
+                            alt="Protestbord bij de overgang: Deze overgang dreigt te sluiten na meer dan 180 jaar zonder alternatief"
+                            loading="lazy"
+                        />
+                        <figcaption>{{ c.eerdere_plannen.img_caption_bord }}</figcaption>
+                    </figure>
 
                     <p>{{ c.eerdere_plannen.para_1 }}</p>
+                    <p>{{ c.eerdere_plannen.para_2 }}</p>
 
                     <figure class="section-figure">
                         <img
@@ -506,9 +485,30 @@
                         <figcaption>{{ c.eerdere_plannen.img_caption_weiland }}</figcaption>
                     </figure>
 
-                    <p>{{ c.eerdere_plannen.para_2 }}</p>
+                    <p>{{ c.eerdere_plannen.img_caption_alverna }}</p>
+
                     <p>{{ c.eerdere_plannen.para_3 }}</p>
                     <p>{{ c.eerdere_plannen.para_4 }}</p>
+
+                    <div class="two-col-figures">
+                        <figure class="section-figure">
+                            <img
+                                src="{{ '/assets/petitie-aanbieding-raad.webp' | relative_url }}"
+                                alt="Aanbieding van het burgerinitiatief met 1.678 handtekeningen aan de burgemeester"
+                                loading="lazy"
+                            />
+                            <figcaption>{{ c.eerdere_plannen.img_caption_1 }}</figcaption>
+                        </figure>
+                        <figure class="section-figure">
+                            <img
+                                src="{{ '/assets/krant-massale-steun.webp' | relative_url }}"
+                                alt="Krantenartikel: Massale steun voor aanleg voetgangerstunnel Leyduin"
+                                loading="lazy"
+                            />
+                            <figcaption>{{ c.eerdere_plannen.img_caption_2 }}</figcaption>
+                        </figure>
+                    </div>
+
                     <p>{{ c.eerdere_plannen.para_5 }}</p>
 
                     <p>
@@ -528,26 +528,6 @@
                     <h2>{{ c.planning.title }}</h2>
                     <p>{{ c.planning.para_1 }}</p>
                     <p>{{ c.planning.para_2 }}</p>
-                </div>
-            </section>
-
-            <!-- BLIJF OP DE HOOGTE -->
-            <section id="op-de-hoogte" class="section section-cta">
-                <div class="container">
-                    <h2>{{ c.op_de_hoogte.title }}</h2>
-                    <p>{{ c.op_de_hoogte.para_1 }}</p>
-                    <p>
-                        {{ c.op_de_hoogte.para_2 }}<br />
-                        <strong>
-                            <a
-                                href="#"
-                                class="email-link"
-                                data-user="burgerinitiatief.leyduin"
-                                data-domain="gmail.com"
-                                >Klik hier voor e-mailadres</a
-                            >
-                        </strong>
-                    </p>
                 </div>
             </section>
 
