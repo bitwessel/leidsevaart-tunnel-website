@@ -232,13 +232,12 @@ li {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    margin-top: var(--nav-height);
-    /* Height: nearly full viewport, leaving ~90px so next section peeks below */
-    height: calc(100vh - var(--nav-height) - 90px);
-    min-height: 480px;
+    margin-top: var(--nav-height - 1rem);
+      /* Shorter hero so the next section title peeks into view */
+      min-height: calc(100vh - var(--nav-height) - 240px);
     /* Match the background of the first section below so the bottom bleeds in */
     background: var(--color-bg);
-    overflow: hidden;
+    overflow: visible;
 }
 
 /* Old ::before was the CSS background image — no longer needed */
@@ -268,18 +267,18 @@ li {
 .hero-content {
     position: relative;
     z-index: 2;
-    flex: 0 0 560px;
+    flex: 0 0 720px;
     margin-left: -80px;
-    padding: var(--space-lg) var(--space-lg) var(--space-lg) calc(var(--space-lg) + 20px);
-    /* Slight transparency — image softly bleeds through */
-    background: rgba(255, 255, 255, 0.91);
+    padding: var(--space-lg) var(--space-lg) var(--space-xs) calc(var(--space-lg) + 40px);
+      /* Gradient: opaque on the right, slightly transparent on the left (image side) */
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.96) 35%);
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     border-left: 5px solid var(--color-green);
     box-shadow: -8px 0 32px rgba(0, 0, 0, 0.12);
     display: flex;
-    align-items: flex-start;
-    overflow-y: auto;
+    align-items: flex-end;
+      overflow-y: visible;
 }
 
 .hero-overlay {
@@ -295,11 +294,12 @@ li {
 
 .hero-text {
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .hero-subtitle {
-    font-size: 1.05rem;
-    line-height: 1.6;
+    font-size: inherit;
+      line-height: 1.75;
     opacity: 1;
     margin-bottom: var(--space-md);
     font-weight: 700;
@@ -1166,7 +1166,7 @@ li {
     width: 100%;
     margin-left: 0;
     padding: var(--space-lg) var(--space-md);
-    background: rgba(255, 255, 255, 0.96);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.97) 30%);
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
     border-left: none;
@@ -1242,7 +1242,7 @@ li {
           width: 100%;
           margin-left: 0;
           padding: var(--space-lg) var(--space-md);
-          background: rgba(255, 255, 255, 0.96);
+          background: linear-gradient(to bottom, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.97) 30%);
           backdrop-filter: none;
           -webkit-backdrop-filter: none;
           border-left: none;
@@ -1255,7 +1255,7 @@ li {
         }
 
         .hero-subtitle {
-          font-size: 1rem;
+          font-size: inherit;
         }
 
                                                                 .hero-actions {
