@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hero redesign – mockup</title>
+<!--
+  Statische mockup van een nieuwe hero. Niet gekoppeld aan Jekyll/content.yml.
+  Open lokaal in de browser vanuit de map mockups/ (gebruikt ../assets en ../style.css voor de nav).
+-->
+<link rel="stylesheet" href="../style.css" />
+<style>
+  /* ---------- Nieuwe hero ---------- */
+  .hero2 {
+    position: relative;
+    background:
+      radial-gradient(1200px 500px at 85% -10%, var(--color-blue-pale), transparent 60%),
+      linear-gradient(180deg, var(--color-green-pale) 0%, var(--color-bg) 100%);
+    /* De nav is fixed (~96px hoog op desktop omdat hij in 2 rijen wrapt), dus hero moet eronder beginnen */
+    padding: calc(96px + clamp(1.5rem, 4vw, 3.5rem)) 0 clamp(2.5rem, 5vw, 4rem);
+    overflow: hidden;
+  }
+  .hero2-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: clamp(1.5rem, 4vw, 4rem);
+    align-items: center;
+  }
+
+  .hero2-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-green);
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    padding: 0.35em 0.9em;
+    border-radius: 999px;
+    margin-bottom: var(--space-md);
+  }
+  .hero2-eyebrow::before {
+    content: "";
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--color-green-light);
+    box-shadow: 0 0 0 4px rgba(90, 158, 114, 0.2);
+  }
+
+  .hero2 h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4.2vw, 3.4rem);
+    line-height: 1.1;
+    color: var(--color-green-dark);
+    margin-bottom: var(--space-md);
+    text-wrap: balance;
+  }
+  .hero2 h1 em {
+    font-style: normal;
+    color: var(--color-green);
+    background: linear-gradient(transparent 62%, rgba(90, 158, 114, 0.22) 62%);
+  }
+
+  .hero2-lead {
+    font-size: clamp(1.05rem, 1.4vw, 1.2rem);
+    line-height: 1.6;
+    color: var(--color-text-light);
+    max-width: 34em;
+    margin-bottom: var(--space-lg);
+  }
+  .hero2-lead strong { color: var(--color-text); }
+
+  .hero2-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+  }
+  .hero2 .btn-primary {
+    background: var(--color-green);
+    color: var(--color-white);
+    box-shadow: 0 6px 16px rgba(45, 95, 62, 0.25);
+  }
+  .hero2 .btn-primary:hover { background: var(--color-green-dark); }
+  .hero2 .btn-secondary { background: var(--color-white); }
+
+  .hero2-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
+    list-style: none;
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+    max-width: 34em;
+  }
+  .hero2-stats b {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 2.2vw, 1.9rem);
+    color: var(--color-green-dark);
+    line-height: 1.1;
+  }
+  .hero2-stats span {
+    font-size: 0.85rem;
+    line-height: 1.35;
+    color: var(--color-text-light);
+    display: block;
+    margin-top: 0.25rem;
+  }
+
+  .hero2-figure {
+    position: relative;
+    margin: 0;
+  }
+  .hero2-figure img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1264 / 848;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.06),
+      0 20px 50px -12px rgba(27, 73, 101, 0.35);
+    transform: rotate(0.6deg);
+  }
+  /* Groen "kader" achter de afbeelding voor diepte */
+  .hero2-figure::before {
+    content: "";
+    position: absolute;
+    inset: 18px -18px -18px 18px;
+    border-radius: 20px;
+    background: var(--color-green-light);
+    opacity: 0.25;
+    z-index: -1;
+  }
+  .hero2-badge {
+    position: absolute;
+    left: -14px;
+    bottom: 22px;
+    background: var(--color-white);
+    border-radius: 14px;
+    padding: 0.7rem 1rem;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 0.9rem;
+    line-height: 1.3;
+    max-width: 260px;
+  }
+  .hero2-badge-icon {
+    flex: none;
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    background: var(--color-negative-bg);
+    color: var(--color-negative);
+    font-weight: 800;
+  }
+  .hero2-badge small { color: var(--color-text-light); display: block; }
+
+  .hero2-scroll {
+    display: block;
+    width: fit-content;
+    margin: var(--space-lg) auto 0;
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    text-decoration: none;
+  }
+  .hero2-scroll::after { content: " ↓"; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 900px) {
+    .hero2-inner { grid-template-columns: 1fr; }
+    .hero2-figure { order: -1; max-width: 640px; margin: 0 auto; width: 100%; }
+    .hero2-figure img { transform: none; border-radius: 16px; }
+    .hero2-figure::before { inset: 10px -10px -10px 10px; }
+    .hero2-badge { left: 10px; bottom: 10px; font-size: 0.8rem; padding: 0.5rem 0.75rem; }
+    .hero2-badge-icon { width: 30px; height: 30px; }
+  }
+  @media (max-width: 768px) {
+    .hero2 { padding-top: calc(var(--nav-height) + var(--space-md)); }
+  }
+  @media (max-width: 480px) {
+    .hero2-badge { display: none; }
+    .hero2-actions .btn { flex: 1 1 100%; }
+    .hero2-stats { gap: 0.5rem; }
+    .hero2-stats span { font-size: 0.75rem; }
+    .hero2-scroll { display: none; }
+  }
+
+  /* Alleen voor de mockup: laat zien waar de volgende sectie begint */
+  .next-peek { padding: var(--space-xl) 0; }
+</style>
+</head>
+<body>
+  <nav class="main-nav" aria-label="Hoofdnavigatie">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo"><img src="../assets/favicon.svg" alt="" class="nav-logo-icon"> Burgerinitiatief Leyduin</a>
+      <ul class="nav-links">
+        <li><a href="#">Burgerinitiatief</a></li>
+        <li><a href="#">Gevolgen</a></li>
+        <li><a href="#">Waarom een tunneltje?</a></li>
+        <li><a href="#">Ondersteuning</a></li>
+        <li><a href="#">Leyduin foto's</a></li>
+        <li><a href="#">Verkiezingen</a></li>
+        <li><a href="#">Terugblik</a></li>
+        <li><a href="#">Planning</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero2" id="hero">
+    <div class="hero2-inner">
+      <div class="hero2-text">
+        <span class="hero2-eyebrow">Burgerinitiatief Heemstede</span>
+        <h1>Een veilige <em>voetgangerstunnel</em> naar Leyduin</h1>
+        <p class="hero2-lead">
+          Sinds de spoorwegovergang in 2024 dichtging, is er geen veilige, directe route meer
+          van de Leidsevaart naar Buitenplaats Leyduin. Een eenvoudige
+          <strong>voetgangerstunnel (met fietsgoot)</strong> onder het spoor brengt het
+          gezonde “ommetje” terug.
+        </p>
+        <div class="hero2-actions">
+          <a href="#doel" class="btn btn-primary">Waarom een tunneltje?</a>
+          <a href="#contact" class="btn btn-secondary">Contact</a>
+        </div>
+        <ul class="hero2-stats">
+          <li><b>1678</b><span>inwoners tekenden het initiatief</span></li>
+          <li><b>2024</b><span>overgang definitief gesloten</span></li>
+          <li><b>2026</b><span>behandeling in de gemeenteraad</span></li>
+        </ul>
+      </div>
+
+      <figure class="hero2-figure">
+        <img src="../assets/hero-image.webp" width="1264" height="848"
+             alt="Illustratie: gezin met kinderwagen bij het afgesloten hek naast het spoor, met een bord ‘Voor een veilige doorgang!’" />
+        <div class="hero2-badge" aria-hidden="true">
+          <span class="hero2-badge-icon">!</span>
+          <span>Overgang dicht sinds <b>29 maart 2024</b><small>Omweg via de drukke Manpadslaan</small></span>
+        </div>
+      </figure>
+    </div>
+    <a class="hero2-scroll" href="#toegang">Lees meer</a>
+  </header>
+
+  <main>
+    <section id="toegang" class="section next-peek">
+      <div class="container">
+        <h2>Doel van het Burgerinitiatief</h2>
+        <p>(Volgende sectie — de uitgebreide intro- en partij-teksten uit de huidige hero verhuizen naar hier en naar #verkiezingen.)</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

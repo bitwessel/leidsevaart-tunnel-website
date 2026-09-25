@@ -10,3 +10,4 @@ permalink: pretty
 # Exclude admin config from processed output
 exclude:
   - README.md
+  - mockups
