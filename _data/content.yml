@@ -1,18 +1,19 @@
 hero:
-  title: Burgerinitiatief Leyduin
-  subtitle: Kies voor een veilige verbinding voor wandelaars tussen Heemstede en Buitenplaats Leyduin!
-  intro_1: |-
-    Het eerste Burgerinitiatief Leyduin voor de realisatie van een <strong>voetgangerstunnel (met fietsgoot)</strong> onder het spoor wordt in <strong>2026</strong> door de gemeenteraad besproken.
-
-    Een tunnel geeft wandelaars een <strong>veilige en directe route</strong> en toegang tot het prachtige natuurgebied Leyduin voor een gezond “ommetje”.
-  intro_2: |-
-    Wilt u ook een veilige en directe wandelroute via een voetgangerstunnel naar Leyduin?
-    Op <strong>18 maart</strong> a.s. zijn de gemeenteraadsverkiezingen — <strong>maak met uw stem het verschil!</strong>
-  intro_3a: Alle politieke partijen in Heemstede die nu deel uitmaken van de raad hebben het Burgerinitiatief gesteund, maar met name <strong>CDA</strong> en <strong>GroenLinks-PvdA</strong> hebben zich de afgelopen jaren sterk gemaakt voor de realisatie van de tunnel en benadrukken tevens het belang ervan in hun verkiezingsprogramma.
-  intro_3b: Bij de <strong>andere partijen</strong> die nu deel uitmaken van de raad staat er <strong>niets</strong> over de voetgangerstunnel in het verkiezingsprogramma.
-  intro_3c: De partij <strong>SSH</strong>, die nu geen deel uitmaakt van de raad, is ook voorstander van een tunnel en heeft dat opgenomen in het verkiezingsprogramma.
+  eyebrow: Burgerinitiatief Heemstede
+  title: Een veilige <em>voetgangerstunnel</em> naar Leyduin
+  lead: Sinds de spoorwegovergang in 2024 dichtging, is er geen veilige, directe route meer van de Leidsevaart naar Buitenplaats Leyduin. Een eenvoudige <strong>voetgangerstunnel (met fietsgoot)</strong> onder het spoor brengt het gezonde “ommetje” terug.
   btn_primary: Waarom een tunneltje?
   btn_secondary: Contact
+  stats:
+    - value: '1678'
+      label: inwoners tekenden het initiatief
+    - value: '2024'
+      label: overgang definitief gesloten
+    - value: '2026'
+      label: behandeling in de gemeenteraad
+  badge_title: Overgang dicht sinds <b>29 maart 2024</b>
+  badge_text: Omweg via de drukke Manpadslaan
+  scroll_label: Lees meer
 toegang:
   title: Doel van het Burgerinitiatief
   img_caption: Bewoners verzetten zich tegen de komende afsluiting, een zonder alternatief. Foto United Photos/Toussaint Kluiters
@@ -95,6 +96,10 @@ verkiezingen:
     - duurzaam recreatief gebruik
   para_3: Er wordt ingezet op gesprekken met ProRail en Landschap Noord-Holland over de financiering. De raad heeft gevraagd om een nader onderzoek door het college.
   para_4: Met het oog op de gemeenteraadsverkiezingen op 18 maart 2026 is het interessant de standpunten van de verschillende partijen na te gaan.
+  party_summary:
+    - Alle politieke partijen in Heemstede die nu deel uitmaken van de raad hebben het Burgerinitiatief gesteund, maar met name <strong>CDA</strong> en <strong>GroenLinks-PvdA</strong> hebben zich de afgelopen jaren sterk gemaakt voor de realisatie van de tunnel en benadrukken tevens het belang ervan in hun verkiezingsprogramma.
+    - Bij de <strong>andere partijen</strong> die nu deel uitmaken van de raad staat er <strong>niets</strong> over de voetgangerstunnel in het verkiezingsprogramma.
+    - De partij <strong>SSH</strong>, die nu geen deel uitmaakt van de raad, is ook voorstander van een tunnel en heeft dat opgenomen in het verkiezingsprogramma.
   parties_title: Politieke standpunten
   parties:
     - name: De Heemsteedse Stemvergelijker

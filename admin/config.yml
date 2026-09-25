@@ -24,13 +24,20 @@ collections:
             name: hero
             widget: object
             fields:
-              - { label: Titel, name: title, widget: string }
-              - { label: Ondertitel, name: subtitle, widget: string }
-              - { label: Introductie alinea 1, name: intro_1, widget: text }
-              - { label: Introductie alinea 2, name: intro_2, widget: text }
-              - { label: Introductie alinea 3, name: intro_3, widget: text }
+              - { label: Label boven titel, name: eyebrow, widget: string }
+              - { label: Titel (gebruik <em>..</em> voor accent), name: title, widget: string }
+              - { label: Introductietekst, name: lead, widget: text }
               - { label: Knop 1 tekst, name: btn_primary, widget: string }
               - { label: Knop 2 tekst, name: btn_secondary, widget: string }
+              - label: Kerncijfers
+                name: stats
+                widget: list
+                fields:
+                  - { label: Cijfer, name: value, widget: string }
+                  - { label: Omschrijving, name: label, widget: string }
+              - { label: Label op afbeelding (titel), name: badge_title, widget: string }
+              - { label: Label op afbeelding (tekst), name: badge_text, widget: string }
+              - { label: Tekst 'lees meer' link, name: scroll_label, widget: string }
 
           # ── TOEGANG ───────────────────────────────────────────
           - label: Sectie — Toegang tot Leyduin
@@ -68,6 +75,10 @@ collections:
               - { label: Alinea 2, name: para_2, widget: text }
               - { label: Alinea 3, name: para_3, widget: text }
               - { label: Alinea 4, name: para_4, widget: text }
+              - label: Samenvatting partijen (alinea's)
+                name: party_summary
+                widget: list
+                field: { label: Alinea, name: item, widget: text }
               - { label: Alinea 5, name: para_5, widget: text }
 
           # ── DOEL ──────────────────────────────────────────────

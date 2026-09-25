@@ -35,7 +35,7 @@
             content="Burgerinitiatief voor een veilige voetgangerstunnel bij Leyduin in Heemstede. Herstel de directe, veilige verbinding voor wandelaars."
         />
         <meta property="og:image" content="https://burgerinitiatief-leyduin.nl/assets/hero-image.webp" />
-        <meta property="og:image:width" content="1200" /
+        <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/webp" />
         <meta property="og:image:alt" content="Voetgangerstunnel Leyduin burgerinitiatief Heemstede" />
@@ -229,28 +229,37 @@
         <!-- HERO -->
         {% assign c = site.data.content %}
         <header class="hero" id="hero">
-            <div class="hero-image-wrap" aria-hidden="true">
-                <img src="{{ '/assets/hero-image.webp' | relative_url }}" alt="" class="hero-bg-img" />
-            </div>
-            <div class="hero-content">
+            <div class="hero-inner">
                 <div class="hero-text">
+                    <span class="hero-eyebrow">{{ c.hero.eyebrow }}</span>
                     <h1>{{ c.hero.title }}</h1>
-                    <p class="hero-subtitle">{{ c.hero.subtitle }}</p>
-                    <p>{{ c.hero.intro_1 }}</p>
-                    <p>{{ c.hero.intro_2 }}</p>
-                    <p>{{ c.hero.intro_3a }}</p>
-                    <p>{{ c.hero.intro_3b }}</p>
-                    <p>{{ c.hero.intro_3c }}</p>
+                    <p class="hero-lead">{{ c.hero.lead }}</p>
                     <div class="hero-actions">
-                        <a href="#doel" class="btn btn-primary"
-                            >{{ c.hero.btn_primary }}</a
-                        >
-                        <a href="#contact" class="btn btn-secondary"
-                            >{{ c.hero.btn_secondary }}</a
-                        >
+                        <a href="#doel" class="btn btn-primary">{{ c.hero.btn_primary }}</a>
+                        <a href="#contact" class="btn btn-secondary">{{ c.hero.btn_secondary }}</a>
                     </div>
+                    <ul class="hero-stats">
+                        {% for stat in c.hero.stats %}
+                        <li><b>{{ stat.value }}</b><span>{{ stat.label }}</span></li>
+                        {% endfor %}
+                    </ul>
                 </div>
+
+                <figure class="hero-figure">
+                    <img
+                        src="{{ '/assets/hero-image.webp' | relative_url }}"
+                        width="1264"
+                        height="848"
+                        alt="Illustratie: gezin met kinderwagen bij het afgesloten hek naast het spoor, met een bord 'Voor een veilige doorgang!'"
+                        fetchpriority="high"
+                    />
+                    <div class="hero-badge" aria-hidden="true">
+                        <span class="hero-badge-icon">!</span>
+                        <span>{{ c.hero.badge_title }}<small>{{ c.hero.badge_text }}</small></span>
+                    </div>
+                </figure>
             </div>
+            <a class="hero-scroll" href="#toegang">{{ c.hero.scroll_label }}</a>
         </header>
 
         <main>
@@ -440,6 +449,9 @@
                     </ul>
                     <p>{{ c.verkiezingen.para_3 }}</p>
                     <p>{{ c.verkiezingen.para_4 }}</p>
+                    {% for p in c.verkiezingen.party_summary %}
+                    <p>{{ p }}</p>
+                    {% endfor %}
 
                     <h3>{{ c.verkiezingen.parties_title }}</h3>
 
@@ -643,6 +655,23 @@
         <script>
             // Minimale vanilla JS voor mobiel menu
             (function () {
+                // Hero start precies onder de (fixed) nav, ook als de nav naar meerdere rijen wrapt
+                var nav = document.querySelector(".main-nav");
+                if (nav) {
+                    var setNavOffset = function () {
+                        document.documentElement.style.setProperty(
+                            "--nav-offset",
+                            nav.offsetHeight + "px",
+                        );
+                    };
+                    setNavOffset();
+                    if (window.ResizeObserver) {
+                        new ResizeObserver(setNavOffset).observe(nav);
+                    } else {
+                        window.addEventListener("resize", setNavOffset);
+                    }
+                }
+
                 var toggle = document.querySelector(".nav-toggle");
                 var links = document.querySelector(".nav-links");
                 if (!toggle || !links) return;
